@@ -1,0 +1,347 @@
+id,label,type,domain,priorityScore,stars
+repo:yatian-skyler-li/GEE_LandcoverClassify,yatian-skyler-li/GEE_LandcoverClassify,Repo,AI / Machine Learning,84,1
+org:yatian-skyler-li,yatian-skyler-li,Organization,,,
+language:JavaScript,JavaScript,Language,,,
+domain:AI / Machine Learning,AI / Machine Learning,Domain,,,
+cluster:AI/Data,AI/Data,Cluster,,,
+cluster:GIS,GIS,Cluster,,,
+repo:ziogref/TAS-Fuel-HA-Intergration,ziogref/TAS-Fuel-HA-Intergration,Repo,Government / Public Data,81,7
+org:ziogref,ziogref,Organization,,,
+language:Python,Python,Language,,,
+domain:Government / Public Data,Government / Public Data,Domain,,,
+topic:api,api,Topic,,,
+topic:australia,australia,Topic,,,
+topic:hacs-integration,hacs-integration,Topic,,,
+topic:home-assistant,home-assistant,Topic,,,
+repo:Racheloise/climatic-benthic-chronicles,Racheloise/climatic-benthic-chronicles,Repo,AI / Machine Learning,78,0
+org:Racheloise,Racheloise,Organization,,,
+language:Unknown,Unknown,Language,,,
+repo:GetBack2Basics/TripCrafter,GetBack2Basics/TripCrafter,Repo,AI / Machine Learning,77,1
+org:GetBack2Basics,GetBack2Basics,Organization,,,
+topic:ai,ai,Topic,,,
+topic:map,map,Topic,,,
+topic:travel,travel,Topic,,,
+topic:travel-app,travel-app,Topic,,,
+repo:botheredbybees/huon-channel-marine-analytics,botheredbybees/huon-channel-marine-analytics,Repo,GIS / Geography,75,1
+org:botheredbybees,botheredbybees,Organization,,,
+domain:GIS / Geography,GIS / Geography,Domain,,,
+repo:NicholasCluff/nullmaps,NicholasCluff/nullmaps,Repo,AI / Machine Learning,73,0
+org:NicholasCluff,NicholasCluff,Organization,,,
+language:Svelte,Svelte,Language,,,
+repo:Atlantis-Ecosystem-Model/South_East_Tasmania_model,Atlantis-Ecosystem-Model/South_East_Tasmania_model,Repo,Data Analysis,69,1
+org:Atlantis-Ecosystem-Model,Atlantis-Ecosystem-Model,Organization,,,
+language:TypeScript,TypeScript,Language,,,
+domain:Data Analysis,Data Analysis,Domain,,,
+repo:arashsm79/tasmanian-devil-gene-enrichment-analysis,arashsm79/tasmanian-devil-gene-enrichment-analysis,Repo,AI / Machine Learning,69,0
+org:arashsm79,arashsm79,Organization,,,
+language:TeX,TeX,Language,,,
+topic:bioinformatics,bioinformatics,Topic,,,
+topic:cancer,cancer,Topic,,,
+topic:edaseq,edaseq,Topic,,,
+topic:edger,edger,Topic,,,
+repo:bicycleboy/nsw_tas_fuel_station,bicycleboy/nsw_tas_fuel_station,Repo,Data Analysis,69,3
+org:bicycleboy,bicycleboy,Organization,,,
+topic:fuel-prices,fuel-prices,Topic,,,
+topic:home-assistant-integration,home-assistant-integration,Topic,,,
+repo:mholling/nswtopo,mholling/nswtopo,Repo,GIS / Geography,68,51
+org:mholling,mholling,Organization,,,
+language:Ruby,Ruby,Language,,,
+repo:LNSOTOM/forestGISML,LNSOTOM/forestGISML,Repo,AI / Machine Learning,68,4
+org:LNSOTOM,LNSOTOM,Organization,,,
+topic:geopandas,geopandas,Topic,,,
+topic:lime,lime,Topic,,,
+topic:machine-learning-algorithms,machine-learning-algorithms,Topic,,,
+topic:numpy,numpy,Topic,,,
+repo:jbkajtar/sst_tasmania,jbkajtar/sst_tasmania,Repo,Marine Science,63,3
+org:jbkajtar,jbkajtar,Organization,,,
+language:MATLAB,MATLAB,Language,,,
+domain:Marine Science,Marine Science,Domain,,,
+topic:climate,climate,Topic,,,
+topic:cmip6,cmip6,Topic,,,
+topic:marine-heatwaves,marine-heatwaves,Topic,,,
+topic:noaa,noaa,Topic,,,
+cluster:UTAS,UTAS,Cluster,,,
+repo:vinmasci/lutruwita_map,vinmasci/lutruwita_map,Repo,GIS / Geography,63,0
+org:vinmasci,vinmasci,Organization,,,
+repo:LamuelCH/spOccupancy_TAS,LamuelCH/spOccupancy_TAS,Repo,GIS / Geography,63,0
+org:LamuelCH,LamuelCH,Organization,,,
+repo:DPIPWE/LIST_Tools_Pro_At_3_Addin,DPIPWE/LIST_Tools_Pro_At_3_Addin,Repo,GIS / Geography,63,0
+org:DPIPWE,DPIPWE,Organization,,,
+repo:vinmasci/Lutruwita_Way,vinmasci/Lutruwita_Way,Repo,GIS / Geography,63,0
+repo:pam-ai-coder/tasmania,pam-ai-coder/tasmania,Repo,AI / Machine Learning,62,0
+org:pam-ai-coder,pam-ai-coder,Organization,,,
+language:HTML,HTML,Language,,,
+repo:cjabradshaw/devilpopmodel,cjabradshaw/devilpopmodel,Repo,Data Analysis,62,0
+org:cjabradshaw,cjabradshaw,Organization,,,
+topic:cohort-based-model,cohort-based-model,Topic,,,
+topic:dasyurid,dasyurid,Topic,,,
+topic:dasyuridae,dasyuridae,Topic,,,
+topic:devil-facial-tumour-disease,devil-facial-tumour-disease,Topic,,,
+repo:ozjimbob/ecbtools,ozjimbob/ecbtools,Repo,Data Analysis,60,2
+org:ozjimbob,ozjimbob,Organization,,,
+language:R,R,Language,,,
+repo:mave1/KIT301---Mapping-Crime-Walks,mave1/KIT301---Mapping-Crime-Walks,Repo,GIS / Geography,60,2
+org:mave1,mave1,Organization,,,
+language:Dart,Dart,Language,,,
+repo:UTAS-physics/KYA211,UTAS-physics/KYA211,Repo,Data Analysis,60,0
+org:UTAS-physics,UTAS-physics,Organization,,,
+language:Jupyter Notebook,Jupyter Notebook,Language,,,
+repo:kaseykhanhpham/eucalyptus-hybrid-resequencing,kaseykhanhpham/eucalyptus-hybrid-resequencing,Repo,Data Analysis,59,5
+org:kaseykhanhpham,kaseykhanhpham,Organization,,,
+language:Shell,Shell,Language,,,
+repo:tinnamchoi/hare-clark-cpp,tinnamchoi/hare-clark-cpp,Repo,Education / UTAS,59,3
+org:tinnamchoi,tinnamchoi,Organization,,,
+language:C++,C++,Language,,,
+domain:Education / UTAS,Education / UTAS,Domain,,,
+topic:cpp,cpp,Topic,,,
+topic:electoral-systems,electoral-systems,Topic,,,
+topic:hare-clark,hare-clark,Topic,,,
+topic:library,library,Topic,,,
+repo:MetalOctopus/Tasmanian-Geology-Map-Downloader,MetalOctopus/Tasmanian-Geology-Map-Downloader,Repo,GIS / Geography,59,0
+org:MetalOctopus,MetalOctopus,Organization,,,
+repo:Jonah-Wilbur/Tasmanian-devil-facial-tumour-disease-dynamics,Jonah-Wilbur/Tasmanian-devil-facial-tumour-disease-dynamics,Repo,Data Analysis,58,0
+org:Jonah-Wilbur,Jonah-Wilbur,Organization,,,
+repo:DPIPWE/LIST_Tools_Pro_Addin,DPIPWE/LIST_Tools_Pro_Addin,Repo,GIS / Geography,58,1
+repo:cpunj/Gov_hack,cpunj/Gov_hack,Repo,Data Analysis,58,0
+org:cpunj,cpunj,Organization,,,
+repo:hastings-lab/tasmanian-devil-sei-models-teamawesome,hastings-lab/tasmanian-devil-sei-models-teamawesome,Repo,Data Analysis,57,0
+org:hastings-lab,hastings-lab,Organization,,,
+repo:JonathanHolvey/tastopo,JonathanHolvey/tastopo,Repo,GIS / Geography,57,0
+org:JonathanHolvey,JonathanHolvey,Organization,,,
+repo:SIDNut/nwrrr-waste-feed,SIDNut/nwrrr-waste-feed,Repo,Government / Public Data,57,0
+org:SIDNut,SIDNut,Organization,,,
+repo:dtcrompton/tasmania-deforestation-detection,dtcrompton/tasmania-deforestation-detection,Repo,AI / Machine Learning,56,0
+org:dtcrompton,dtcrompton,Organization,,,
+repo:FerdianFy13/Tasmanian-Devil,FerdianFy13/Tasmanian-Devil,Repo,Web / App,55,1
+org:FerdianFy13,FerdianFy13,Organization,,,
+language:SCSS,SCSS,Language,,,
+domain:Web / App,Web / App,Domain,,,
+repo:sage3648/KIT305-Mobile-Application-Development,sage3648/KIT305-Mobile-Application-Development,Repo,Data Analysis,55,0
+org:sage3648,sage3648,Organization,,,
+language:Java,Java,Language,,,
+repo:NordicFlame/SimpleEcho,NordicFlame/SimpleEcho,Repo,Data Analysis,55,0
+org:NordicFlame,NordicFlame,Organization,,,
+repo:danielmuar/EO_GEOM7001_PROJECT,danielmuar/EO_GEOM7001_PROJECT,Repo,AI / Machine Learning,55,0
+org:danielmuar,danielmuar,Organization,,,
+repo:siskavera/tasmanian-devil,siskavera/tasmanian-devil,Repo,GIS / Geography,54,1
+org:siskavera,siskavera,Organization,,,
+language:Matlab,Matlab,Language,,,
+repo:Jayden-Kearney/tasmania_species_app,Jayden-Kearney/tasmania_species_app,Repo,Web / App,54,0
+org:Jayden-Kearney,Jayden-Kearney,Organization,,,
+repo:kittoyeah/regionalmate,kittoyeah/regionalmate,Repo,Education / UTAS,54,0
+org:kittoyeah,kittoyeah,Organization,,,
+repo:willemolding/penguin-tracks-vis,willemolding/penguin-tracks-vis,Repo,Marine Science,53,3
+org:willemolding,willemolding,Organization,,,
+repo:Ryan-Ashton/Identifying-Tasmanian-Tigers-CNN,Ryan-Ashton/Identifying-Tasmanian-Tigers-CNN,Repo,AI / Machine Learning,53,0
+org:Ryan-Ashton,Ryan-Ashton,Organization,,,
+repo:RobWilsonTas/Tas_Aspect_Dryness,RobWilsonTas/Tas_Aspect_Dryness,Repo,Data Analysis,53,0
+org:RobWilsonTas,RobWilsonTas,Organization,,,
+repo:maxfire2008/metrotas-cancellations-history,maxfire2008/metrotas-cancellations-history,Repo,Government / Public Data,53,0
+org:maxfire2008,maxfire2008,Organization,,,
+repo:Bigben83/tasmanian_planbuild,Bigben83/tasmanian_planbuild,Repo,Data Analysis,52,0
+org:Bigben83,Bigben83,Organization,,,
+repo:sylviapump/endemic-birds-of-tasmania,sylviapump/endemic-birds-of-tasmania,Repo,Data Analysis,52,0
+org:sylviapump,sylviapump,Organization,,,
+repo:43South/tasmaniada,43South/tasmaniada,Repo,Data Analysis,51,2
+org:43South,43South,Organization,,,
+repo:DamienIrving/hydrotas,DamienIrving/hydrotas,Repo,Data Analysis,51,0
+org:DamienIrving,DamienIrving,Organization,,,
+repo:TripMomentIntern/2026_Tasmania,TripMomentIntern/2026_Tasmania,Repo,Web / App,51,0
+org:TripMomentIntern,TripMomentIntern,Organization,,,
+repo:surveyreports/utas-spc,surveyreports/utas-spc,Repo,Data Analysis,51,0
+org:surveyreports,surveyreports,Organization,,,
+repo:giftfairy/Discover-George-Town,giftfairy/Discover-George-Town,Repo,Web / App,51,0
+org:giftfairy,giftfairy,Organization,,,
+repo:mdsumner/tasmapr,mdsumner/tasmapr,Repo,GIS / Geography,50,2
+org:mdsumner,mdsumner,Organization,,,
+repo:bluewingedsoul/EWE-MarinePredators-Tasmania,bluewingedsoul/EWE-MarinePredators-Tasmania,Repo,Marine Science,50,0
+org:bluewingedsoul,bluewingedsoul,Organization,,,
+repo:ElijahCuff/Yellow-Pages-Scraper-Australia,ElijahCuff/Yellow-Pages-Scraper-Australia,Repo,GIS / Geography,50,2
+org:ElijahCuff,ElijahCuff,Organization,,,
+language:PHP,PHP,Language,,,
+repo:43South/westtamarda,43South/westtamarda,Repo,Data Analysis,50,0
+repo:mahirs291/house-price-analysis,mahirs291/house-price-analysis,Repo,Data Analysis,50,0
+org:mahirs291,mahirs291,Organization,,,
+repo:kurankat/tasmapper,kurankat/tasmapper,Repo,GIS / Geography,50,0
+org:kurankat,kurankat,Organization,,,
+language:Go,Go,Language,,,
+repo:utasanalytics/utas-analytics,utasanalytics/utas-analytics,Repo,Data Analysis,49,2
+org:utasanalytics,utasanalytics,Organization,,,
+repo:Jamzy01/tasmanian-bike-tours-website,Jamzy01/tasmanian-bike-tours-website,Repo,Data Analysis,49,0
+org:Jamzy01,Jamzy01,Organization,,,
+repo:franciscoalbergoli/Sea_Urchin_Catcher,franciscoalbergoli/Sea_Urchin_Catcher,Repo,Marine Science,49,0
+org:franciscoalbergoli,franciscoalbergoli,Organization,,,
+repo:cooindaonthebeach/cooindaonthebeach,cooindaonthebeach/cooindaonthebeach,Repo,Data Analysis,49,0
+org:cooindaonthebeach,cooindaonthebeach,Organization,,,
+repo:nf-s/multiverse-website,nf-s/multiverse-website,Repo,Web / App,49,0
+org:nf-s,nf-s,Organization,,,
+repo:alexgleith/tasmap.org,alexgleith/tasmap.org,Repo,GIS / Geography,48,5
+org:alexgleith,alexgleith,Organization,,,
+repo:stuarta0/launceston-3d,stuarta0/launceston-3d,Repo,GIS / Geography,48,5
+org:stuarta0,stuarta0,Organization,,,
+repo:parisba/2026-ArtsTas-SL,parisba/2026-ArtsTas-SL,Repo,Web / App,48,0
+org:parisba,parisba,Organization,,,
+repo:jrcrisford/programming-portfolio-kit107,jrcrisford/programming-portfolio-kit107,Repo,Student Projects,48,0
+org:jrcrisford,jrcrisford,Organization,,,
+language:C,C,Language,,,
+domain:Student Projects,Student Projects,Domain,,,
+repo:TheDarkPanther/TasmaniaMap,TheDarkPanther/TasmaniaMap,Repo,GIS / Geography,47,0
+org:TheDarkPanther,TheDarkPanther,Organization,,,
+repo:nickfountainjones/PracticalsKPZ312,nickfountainjones/PracticalsKPZ312,Repo,Data Analysis,47,0
+org:nickfountainjones,nickfountainjones,Organization,,,
+repo:vanDemonian/TAS_data,vanDemonian/TAS_data,Repo,Data Analysis,47,0
+org:vanDemonian,vanDemonian,Organization,,,
+repo:taziedevil/tasmania-realestate-heatmap,taziedevil/tasmania-realestate-heatmap,Repo,GIS / Geography,47,0
+org:taziedevil,taziedevil,Organization,,,
+repo:taziedevil/tasmania-suburb-report-table,taziedevil/tasmania-suburb-report-table,Repo,GIS / Geography,47,0
+repo:paulieokay/coupes,paulieokay/coupes,Repo,GIS / Geography,47,0
+org:paulieokay,paulieokay,Organization,,,
+repo:taziedevil/tasmanian-suburb-table-map,taziedevil/tasmanian-suburb-table-map,Repo,GIS / Geography,47,0
+repo:taziedevil/tasmania-real-estate-map,taziedevil/tasmania-real-estate-map,Repo,GIS / Geography,47,0
+repo:travistyzero/hydro-data,travistyzero/hydro-data,Repo,Data Analysis,47,0
+org:travistyzero,travistyzero,Organization,,,
+repo:mjec/metro-data,mjec/metro-data,Repo,Data Analysis,47,0
+org:mjec,mjec,Organization,,,
+repo:lanceolata-au/prodromoi-api,lanceolata-au/prodromoi-api,Repo,Local Business / Tourism,47,0
+org:lanceolata-au,lanceolata-au,Organization,,,
+language:C#,C#,Language,,,
+domain:Local Business / Tourism,Local Business / Tourism,Domain,,,
+repo:fredfery/3d-land-cover-map-Tasmania-esri,fredfery/3d-land-cover-map-Tasmania-esri,Repo,GIS / Geography,47,0
+org:fredfery,fredfery,Organization,,,
+repo:fredfery/3d-land-cover-map-Tasmania-esa,fredfery/3d-land-cover-map-Tasmania-esa,Repo,GIS / Geography,47,0
+repo:lukaslindenthal/flight-campaign-rf01-demo,lukaslindenthal/flight-campaign-rf01-demo,Repo,GIS / Geography,47,0
+org:lukaslindenthal,lukaslindenthal,Organization,,,
+repo:AleronFrancois/PostCodeProgram,AleronFrancois/PostCodeProgram,Repo,GIS / Geography,47,0
+org:AleronFrancois,AleronFrancois,Organization,,,
+repo:mohmmadAK/SIT305,mohmmadAK/SIT305,Repo,Data Analysis,47,0
+org:mohmmadAK,mohmmadAK,Organization,,,
+repo:mdsumner/applemile,mdsumner/applemile,Repo,GIS / Geography,46,0
+repo:galckmin/PhD_DataAnalysis,galckmin/PhD_DataAnalysis,Repo,Data Analysis,46,0
+org:galckmin,galckmin,Organization,,,
+repo:cazalye/universityFC,cazalye/universityFC,Repo,Education / UTAS,46,0
+org:cazalye,cazalye,Organization,,,
+topic:contentful,contentful,Topic,,,
+topic:gatsby,gatsby,Topic,,,
+topic:gatsby-site,gatsby-site,Topic,,,
+topic:netlify,netlify,Topic,,,
+repo:NordicFlame/SuperCubicleAdventures,NordicFlame/SuperCubicleAdventures,Repo,Data Analysis,46,0
+language:ShaderLab,ShaderLab,Language,,,
+repo:tfsbrigades/Tasmania-brigades,tfsbrigades/Tasmania-brigades,Repo,Web / App,45,0
+org:tfsbrigades,tfsbrigades,Organization,,,
+repo:Getbusi/lgmtas,Getbusi/lgmtas,Repo,Web / App,45,0
+org:Getbusi,Getbusi,Organization,,,
+repo:Kirirou/farmtasker-au,Kirirou/farmtasker-au,Repo,Web / App,45,0
+org:Kirirou,Kirirou,Organization,,,
+language:Rust,Rust,Language,,,
+repo:sdesalas/pocket-convict-finder,sdesalas/pocket-convict-finder,Repo,Data Analysis,45,0
+org:sdesalas,sdesalas,Organization,,,
+repo:rdmpage/pap-proc-roy-soc-tas,rdmpage/pap-proc-roy-soc-tas,Repo,Research Projects,44,0
+org:rdmpage,rdmpage,Organization,,,
+domain:Research Projects,Research Projects,Domain,,,
+repo:gopaladhikari/travel-with-a-cause,gopaladhikari/travel-with-a-cause,Repo,Web / App,44,0
+org:gopaladhikari,gopaladhikari,Organization,,,
+repo:wghuneke/UTasIMAS_PhDThesis_Template,wghuneke/UTasIMAS_PhDThesis_Template,Repo,Marine Science,42,14
+org:wghuneke,wghuneke,Organization,,,
+repo:JorgeRodriguezGonzalez/tasmania-roofing,JorgeRodriguezGonzalez/tasmania-roofing,Repo,Web / App,42,0
+org:JorgeRodriguezGonzalez,JorgeRodriguezGonzalez,Organization,,,
+repo:SanchoDev39/ExploreFlindersIsland,SanchoDev39/ExploreFlindersIsland,Repo,Web / App,42,0
+org:SanchoDev39,SanchoDev39,Organization,,,
+repo:ahpoi/tasmania-overland-planner,ahpoi/tasmania-overland-planner,Repo,Web / App,42,0
+org:ahpoi,ahpoi,Organization,,,
+repo:yilinqiao/tasmania-2025-trip,yilinqiao/tasmania-2025-trip,Repo,Web / App,42,0
+org:yilinqiao,yilinqiao,Organization,,,
+repo:martincherries-star/Bushmill-Tours,martincherries-star/Bushmill-Tours,Repo,Web / App,42,0
+org:martincherries-star,martincherries-star,Organization,,,
+repo:motomazza-hub/tasmania-trip-diary,motomazza-hub/tasmania-trip-diary,Repo,Web / App,42,0
+org:motomazza-hub,motomazza-hub,Organization,,,
+repo:aj-kivimaki/au2mate-showcase,aj-kivimaki/au2mate-showcase,Repo,Web / App,42,0
+org:aj-kivimaki,aj-kivimaki,Organization,,,
+topic:aws,aws,Topic,,,
+topic:docker,docker,Topic,,,
+topic:express,express,Topic,,,
+topic:full-stack,full-stack,Topic,,,
+repo:FCMAP/qgis2web_2024_03_29-12_15_36_411992,FCMAP/qgis2web_2024_03_29-12_15_36_411992,Repo,GIS / Geography,41,0
+org:FCMAP,FCMAP,Organization,,,
+repo:ztgreene/tasmanian_devils,ztgreene/tasmanian_devils,Repo,Data Analysis,41,0
+org:ztgreene,ztgreene,Organization,,,
+repo:sergioiglevar/AIRBNB_TASMANIA,sergioiglevar/AIRBNB_TASMANIA,Repo,Data Analysis,41,0
+org:sergioiglevar,sergioiglevar,Organization,,,
+repo:Tas-Tech-Talks/tas-tech-events,Tas-Tech-Talks/tas-tech-events,Repo,Web / App,41,1
+org:Tas-Tech-Talks,Tas-Tech-Talks,Organization,,,
+repo:u7293638/aus-ghost-map,u7293638/aus-ghost-map,Repo,GIS / Geography,41,0
+org:u7293638,u7293638,Organization,,,
+repo:BrendanGasparin/gardening-2011,BrendanGasparin/gardening-2011,Repo,Education / UTAS,41,0
+org:BrendanGasparin,BrendanGasparin,Organization,,,
+repo:namedummy568-stack/TasmanianMarineData,namedummy568-stack/TasmanianMarineData,Repo,Marine Science,40,0
+org:namedummy568-stack,namedummy568-stack,Organization,,,
+repo:nf-s/tas-convict-datavis-d3,nf-s/tas-convict-datavis-d3,Repo,Data Analysis,40,0
+repo:RobTheOceanographer/tassie_sst_climatology,RobTheOceanographer/tassie_sst_climatology,Repo,Marine Science,40,1
+org:RobTheOceanographer,RobTheOceanographer,Organization,,,
+repo:travistyzero/hydro-web,travistyzero/hydro-web,Repo,Government / Public Data,39,0
+repo:unitingstats-spec/UnitingStats,unitingstats-spec/UnitingStats,Repo,Web / App,39,0
+org:unitingstats-spec,unitingstats-spec,Organization,,,
+repo:GITenberg/The-History-of-Tasmania-Volume-I_24362,GITenberg/The-History-of-Tasmania-Volume-I_24362,Repo,Web / App,39,0
+org:GITenberg,GITenberg,Organization,,,
+repo:GITenberg/The-History-of-Tasmania-Volume-II_22849,GITenberg/The-History-of-Tasmania-Volume-II_22849,Repo,Web / App,39,0
+repo:jrcrisford/skybound-ascension-prototype,jrcrisford/skybound-ascension-prototype,Repo,Student Projects,39,0
+repo:NAJMUL-DBN/KIT500,NAJMUL-DBN/KIT500,Repo,Student Projects,39,0
+org:NAJMUL-DBN,NAJMUL-DBN,Organization,,,
+repo:ManinderpreetPuri/Business-Resilliance-Program-Data-Analysis,ManinderpreetPuri/Business-Resilliance-Program-Data-Analysis,Repo,Data Analysis,39,0
+org:ManinderpreetPuri,ManinderpreetPuri,Organization,,,
+topic:dataanalytics,dataanalytics,Topic,,,
+topic:dax,dax,Topic,,,
+topic:powerbi,powerbi,Topic,,,
+topic:powerquerym,powerquerym,Topic,,,
+repo:SeaShadow/LaTeX-AMC-PhD-Thesis-Template,SeaShadow/LaTeX-AMC-PhD-Thesis-Template,Repo,Education / UTAS,38,4
+org:SeaShadow,SeaShadow,Organization,,,
+repo:ElijahCuff/Tas-GRN-Collection,ElijahCuff/Tas-GRN-Collection,Repo,Government / Public Data,38,0
+repo:justDlight/Shop_Tasmania_CSS,justDlight/Shop_Tasmania_CSS,Repo,Web / App,38,1
+org:justDlight,justDlight,Organization,,,
+language:CSS,CSS,Language,,,
+repo:A-J-Morris/Blakes-Opening-UAV-Data-Applications,A-J-Morris/Blakes-Opening-UAV-Data-Applications,Repo,Data Analysis,38,0
+org:A-J-Morris,A-J-Morris,Organization,,,
+repo:admiraldolphin/govhack2013,admiraldolphin/govhack2013,Repo,Government / Public Data,37,1
+org:admiraldolphin,admiraldolphin,Organization,,,
+repo:alexanderhayward1995/Soundbites-tas,alexanderhayward1995/Soundbites-tas,Repo,Data Analysis,37,0
+org:alexanderhayward1995,alexanderhayward1995,Organization,,,
+repo:Veryboredcat/tasmanianwildcall,Veryboredcat/tasmanianwildcall,Repo,Web / App,37,0
+org:Veryboredcat,Veryboredcat,Organization,,,
+repo:Ecosystem-Indicators-Workflows/tasmanian-bogs-water-balance,Ecosystem-Indicators-Workflows/tasmanian-bogs-water-balance,Repo,Data Analysis,37,1
+org:Ecosystem-Indicators-Workflows,Ecosystem-Indicators-Workflows,Organization,,,
+repo:Chanpreet-Singh/Talk2Me-Tasmania-public,Chanpreet-Singh/Talk2Me-Tasmania-public,Repo,Data Analysis,37,0
+org:Chanpreet-Singh,Chanpreet-Singh,Organization,,,
+repo:KimJuWan1/Classifying-Tasmanian-Bird-Vocalizations-Using-machine-learning-with-Data-Augmentation,KimJuWan1/Classifying-Tasmanian-Bird-Vocalizations-Using-machine-learning-with-Data-Augmentation,Repo,Data Analysis,37,0
+org:KimJuWan1,KimJuWan1,Organization,,,
+repo:Andrew-Klekociuk/allskycam,Andrew-Klekociuk/allskycam,Repo,Data Analysis,37,0
+org:Andrew-Klekociuk,Andrew-Klekociuk,Organization,,,
+repo:sage3648/KIT301-ICT-Project,sage3648/KIT301-ICT-Project,Repo,GIS / Geography,37,0
+repo:travelens/tasmania-2018,travelens/tasmania-2018,Repo,Local Business / Tourism,36,0
+org:travelens,travelens,Organization,,,
+language:Astro,Astro,Language,,,
+repo:disclosurelogs/au-tas-register-of-lobbyists,disclosurelogs/au-tas-register-of-lobbyists,Repo,GIS / Geography,36,0
+org:disclosurelogs,disclosurelogs,Organization,,,
+repo:kasun1986/project-A,kasun1986/project-A,Repo,Education / UTAS,36,0
+org:kasun1986,kasun1986,Organization,,,
+repo:lisa-craw/tasmania_airbnbs,lisa-craw/tasmania_airbnbs,Repo,Data Analysis,36,1
+org:lisa-craw,lisa-craw,Organization,,,
+repo:travelens/tasmania-2023,travelens/tasmania-2023,Repo,Local Business / Tourism,36,0
+repo:vecotter-cpu/dovecote-estate,vecotter-cpu/dovecote-estate,Repo,Web / App,36,0
+org:vecotter-cpu,vecotter-cpu,Organization,,,
+repo:PT9301/Australian-Mountain-Peaks-KML,PT9301/Australian-Mountain-Peaks-KML,Repo,GIS / Geography,36,0
+org:PT9301,PT9301,Organization,,,
+repo:chrmccar/tasmania_seasons,chrmccar/tasmania_seasons,Repo,Data Analysis,35,0
+org:chrmccar,chrmccar,Organization,,,
+repo:yanter/ccat,yanter/ccat,Repo,Other Tasmania,35,0
+org:yanter,yanter,Organization,,,
+domain:Other Tasmania,Other Tasmania,Domain,,,
+repo:wragge/chinese-tasmania-jlite,wragge/chinese-tasmania-jlite,Repo,Data Analysis,35,0
+org:wragge,wragge,Organization,,,
+repo:EliCarli/VarDyn_south_Tasmania_dataset,EliCarli/VarDyn_south_Tasmania_dataset,Repo,Data Analysis,35,0
+org:EliCarli,EliCarli,Organization,,,
+language:nesC,nesC,Language,,,
+repo:exxamalte/python-georss-tfs-incidents-client,exxamalte/python-georss-tfs-incidents-client,Repo,GIS / Geography,35,0
+org:exxamalte,exxamalte,Organization,,,
+topic:georss,georss,Topic,,,
+repo:T3A2Group/client,T3A2Group/client,Repo,Web / App,34,1
+org:T3A2Group,T3A2Group,Organization,,,
+repo:43South/Tasmanian-Councils,43South/Tasmanian-Councils,Repo,Government / Public Data,34,0

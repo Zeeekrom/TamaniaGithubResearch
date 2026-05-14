@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tasmania Tech / Research Intelligence Dashboard</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow" data-i18n="eyebrow">Research Intelligence System</p>
+        <h1 data-i18n="title">Tasmania Tech / Research Intelligence Dashboard</h1>
+      </div>
+      <div class="top-actions">
+        <label class="language-control">
+          <span data-i18n="languageLabel">Language</span>
+          <select id="languageSelect">
+            <option value="en">🇦🇺 English</option>
+            <option value="zh">🇨🇳 中文</option>
+            <option value="zh-tw">🇹🇼 繁體中文</option>
+          </select>
+        </label>
+        <button id="githubUpdateBtn" type="button" data-i18n="updateGithub">Update from GitHub</button>
+        <a href="./data/powerbi_research_intelligence.csv">Power BI CSV</a>
+        <a href="./data/neo4j_nodes.csv" data-i18n="neo4jNodes">Neo4j Nodes</a>
+        <a href="./data/neo4j_edges.csv" data-i18n="neo4jEdges">Neo4j Edges</a>
+      </div>
+    </header>
+
+    <main>
+      <div id="githubUpdateStatus" class="update-status" role="status"></div>
+      <section class="kpi-grid" id="kpis"></section>
+
+      <section class="filter-panel">
+        <div class="filter-row">
+          <label>
+            <span data-i18n="search">Search</span>
+            <input id="searchInput" type="search" placeholder="repo / owner / description / topic" />
+          </label>
+          <label>
+            <span data-i18n="domain">Domain</span>
+            <select id="domainFilter"></select>
+          </label>
+          <label>
+            <span data-i18n="repoLanguage">Language</span>
+            <select id="languageFilter"></select>
+          </label>
+          <label>
+            <span data-i18n="minimumPriority">Minimum Priority</span>
+            <input id="priorityFilter" type="range" min="0" max="100" value="0" />
+            <span id="priorityValue">0</span>
+          </label>
+        </div>
+        <div class="toggle-row">
+          <label><input type="checkbox" id="filterUTAS" /> UTAS</label>
+          <label><input type="checkbox" id="filterAI" /> AI</label>
+          <label><input type="checkbox" id="filterData" /> Data</label>
+          <label><input type="checkbox" id="filterGIS" /> GIS</label>
+          <label><input type="checkbox" id="filterActive" /> <span data-i18n="active">Active</span></label>
+          <label><input type="checkbox" id="filterProduction" /> Production-ready</label>
+          <label><input type="checkbox" id="filterStudent" /> Student project</label>
+          <label><input type="checkbox" id="filterHideArchived" /> <span data-i18n="hideArchived">Hide archived</span></label>
+        </div>
+      </section>
+
+      <section class="layout">
+        <article class="panel span-4">
+          <div class="panel-head">
+            <h2 data-i18n="projectDomainOverview">Project Domain Overview</h2>
+            <span id="filteredCount"></span>
+          </div>
+          <div class="treemap" id="categoryTreemap"></div>
+        </article>
+
+        <article class="panel span-8">
+          <div class="panel-head">
+            <h2 data-i18n="usefulnessMatrix">Usefulness Matrix</h2>
+            <span data-i18n="matrixHint">X=Technical Value, Y=Personal Relevance, Size=stars</span>
+          </div>
+          <svg id="scatterPlot" viewBox="0 0 900 430" role="img" aria-label="技术价值和个人相关度散点图"></svg>
+        </article>
+
+        <article class="panel span-5">
+          <div class="panel-head">
+            <h2 data-i18n="techStackStatistics">Tech Stack Statistics</h2>
+            <span data-i18n="techStackHint">Inferred from repo tags and language</span>
+          </div>
+          <div id="techBars" class="bar-list"></div>
+        </article>
+
+        <article class="panel span-7">
+          <div class="panel-head">
+            <h2 data-i18n="timelineActivity">Timeline / Activity</h2>
+            <span data-i18n="timelineHint">Trend by created_at</span>
+          </div>
+          <svg id="timelineChart" viewBox="0 0 820 330" role="img" aria-label="时间轴图表"></svg>
+        </article>
+
+        <article class="panel span-7">
+          <div class="panel-head">
+            <h2 data-i18n="knowledgeMatrix">Knowledge Matrix</h2>
+            <span data-i18n="knowledgeHint">Domain × Tech Stack</span>
+          </div>
+          <canvas id="forceGraph" width="900" height="520"></canvas>
+        </article>
+
+        <article class="panel span-5">
+          <div class="panel-head">
+            <h2 data-i18n="deepResearchQueue">Deep Research Queue</h2>
+            <span data-i18n="queueHint">Auto-prioritized Top 20</span>
+          </div>
+          <div id="queueList" class="queue-list"></div>
+        </article>
+
+        <article class="panel span-12">
+          <div class="panel-head">
+            <h2 data-i18n="ragAssistant">RAG Research Assistant</h2>
+            <span data-i18n="ragHint">Uses current filters and top matching repos as context</span>
+          </div>
+          <div class="assistant-panel">
+            <div class="assistant-input">
+              <textarea id="ragQuestion" rows="3" data-i18n-placeholder="ragPlaceholder" placeholder="Ask about Tasmania / UTAS repos, AI/Data fit, portfolio ideas, or research priorities."></textarea>
+              <button id="ragAskBtn" type="button" data-i18n="askAssistant">Ask Assistant</button>
+            </div>
+            <div id="ragStatus" class="assistant-status"></div>
+            <div id="ragAnswer" class="assistant-answer"></div>
+          </div>
+        </article>
+
+        <article class="panel span-12">
+          <div class="panel-head">
+            <h2 data-i18n="repoExplorer">Repo Explorer</h2>
+            <span id="tableMeta"></span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th data-i18n="rank">Rank</th>
+                  <th>Repo</th>
+                  <th data-i18n="domain">Domain</th>
+                  <th data-i18n="score">Score</th>
+                  <th>Flags</th>
+                  <th data-i18n="descriptionEvaluation">Description · Evaluation</th>
+                </tr>
+              </thead>
+              <tbody id="repoTable"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div id="tooltip" class="tooltip" hidden></div>
+    <script src="./dashboard.js" type="module"></script>
+  </body>
+</html>

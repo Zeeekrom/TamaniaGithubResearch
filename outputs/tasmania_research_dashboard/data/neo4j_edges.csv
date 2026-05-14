@@ -1,0 +1,588 @@
+source,target,relation
+repo:yatian-skyler-li/GEE_LandcoverClassify,org:yatian-skyler-li,OWNED_BY
+repo:yatian-skyler-li/GEE_LandcoverClassify,language:JavaScript,USES_LANGUAGE
+repo:yatian-skyler-li/GEE_LandcoverClassify,domain:AI / Machine Learning,IN_DOMAIN
+repo:yatian-skyler-li/GEE_LandcoverClassify,cluster:AI/Data,RELATED_TO
+repo:yatian-skyler-li/GEE_LandcoverClassify,cluster:GIS,RELATED_TO
+repo:ziogref/TAS-Fuel-HA-Intergration,org:ziogref,OWNED_BY
+repo:ziogref/TAS-Fuel-HA-Intergration,language:Python,USES_LANGUAGE
+repo:ziogref/TAS-Fuel-HA-Intergration,domain:Government / Public Data,IN_DOMAIN
+repo:ziogref/TAS-Fuel-HA-Intergration,topic:api,HAS_TOPIC
+repo:ziogref/TAS-Fuel-HA-Intergration,topic:australia,HAS_TOPIC
+repo:ziogref/TAS-Fuel-HA-Intergration,topic:hacs-integration,HAS_TOPIC
+repo:ziogref/TAS-Fuel-HA-Intergration,topic:home-assistant,HAS_TOPIC
+repo:ziogref/TAS-Fuel-HA-Intergration,cluster:AI/Data,RELATED_TO
+repo:Racheloise/climatic-benthic-chronicles,org:Racheloise,OWNED_BY
+repo:Racheloise/climatic-benthic-chronicles,language:Unknown,USES_LANGUAGE
+repo:Racheloise/climatic-benthic-chronicles,domain:AI / Machine Learning,IN_DOMAIN
+repo:Racheloise/climatic-benthic-chronicles,cluster:AI/Data,RELATED_TO
+repo:GetBack2Basics/TripCrafter,org:GetBack2Basics,OWNED_BY
+repo:GetBack2Basics/TripCrafter,language:JavaScript,USES_LANGUAGE
+repo:GetBack2Basics/TripCrafter,domain:AI / Machine Learning,IN_DOMAIN
+repo:GetBack2Basics/TripCrafter,topic:ai,HAS_TOPIC
+repo:GetBack2Basics/TripCrafter,topic:map,HAS_TOPIC
+repo:GetBack2Basics/TripCrafter,topic:travel,HAS_TOPIC
+repo:GetBack2Basics/TripCrafter,topic:travel-app,HAS_TOPIC
+repo:GetBack2Basics/TripCrafter,cluster:AI/Data,RELATED_TO
+repo:GetBack2Basics/TripCrafter,cluster:GIS,RELATED_TO
+repo:botheredbybees/huon-channel-marine-analytics,org:botheredbybees,OWNED_BY
+repo:botheredbybees/huon-channel-marine-analytics,language:Python,USES_LANGUAGE
+repo:botheredbybees/huon-channel-marine-analytics,domain:GIS / Geography,IN_DOMAIN
+repo:botheredbybees/huon-channel-marine-analytics,cluster:AI/Data,RELATED_TO
+repo:botheredbybees/huon-channel-marine-analytics,cluster:GIS,RELATED_TO
+repo:NicholasCluff/nullmaps,org:NicholasCluff,OWNED_BY
+repo:NicholasCluff/nullmaps,language:Svelte,USES_LANGUAGE
+repo:NicholasCluff/nullmaps,domain:AI / Machine Learning,IN_DOMAIN
+repo:NicholasCluff/nullmaps,cluster:AI/Data,RELATED_TO
+repo:NicholasCluff/nullmaps,cluster:GIS,RELATED_TO
+repo:Atlantis-Ecosystem-Model/South_East_Tasmania_model,org:Atlantis-Ecosystem-Model,OWNED_BY
+repo:Atlantis-Ecosystem-Model/South_East_Tasmania_model,language:TypeScript,USES_LANGUAGE
+repo:Atlantis-Ecosystem-Model/South_East_Tasmania_model,domain:Data Analysis,IN_DOMAIN
+repo:Atlantis-Ecosystem-Model/South_East_Tasmania_model,cluster:AI/Data,RELATED_TO
+repo:arashsm79/tasmanian-devil-gene-enrichment-analysis,org:arashsm79,OWNED_BY
+repo:arashsm79/tasmanian-devil-gene-enrichment-analysis,language:TeX,USES_LANGUAGE
+repo:arashsm79/tasmanian-devil-gene-enrichment-analysis,domain:AI / Machine Learning,IN_DOMAIN
+repo:arashsm79/tasmanian-devil-gene-enrichment-analysis,topic:bioinformatics,HAS_TOPIC
+repo:arashsm79/tasmanian-devil-gene-enrichment-analysis,topic:cancer,HAS_TOPIC
+repo:arashsm79/tasmanian-devil-gene-enrichment-analysis,topic:edaseq,HAS_TOPIC
+repo:arashsm79/tasmanian-devil-gene-enrichment-analysis,topic:edger,HAS_TOPIC
+repo:arashsm79/tasmanian-devil-gene-enrichment-analysis,cluster:AI/Data,RELATED_TO
+repo:bicycleboy/nsw_tas_fuel_station,org:bicycleboy,OWNED_BY
+repo:bicycleboy/nsw_tas_fuel_station,language:Python,USES_LANGUAGE
+repo:bicycleboy/nsw_tas_fuel_station,domain:Data Analysis,IN_DOMAIN
+repo:bicycleboy/nsw_tas_fuel_station,topic:fuel-prices,HAS_TOPIC
+repo:bicycleboy/nsw_tas_fuel_station,topic:hacs-integration,HAS_TOPIC
+repo:bicycleboy/nsw_tas_fuel_station,topic:home-assistant,HAS_TOPIC
+repo:bicycleboy/nsw_tas_fuel_station,topic:home-assistant-integration,HAS_TOPIC
+repo:bicycleboy/nsw_tas_fuel_station,cluster:AI/Data,RELATED_TO
+repo:mholling/nswtopo,org:mholling,OWNED_BY
+repo:mholling/nswtopo,language:Ruby,USES_LANGUAGE
+repo:mholling/nswtopo,domain:GIS / Geography,IN_DOMAIN
+repo:mholling/nswtopo,cluster:GIS,RELATED_TO
+repo:LNSOTOM/forestGISML,org:LNSOTOM,OWNED_BY
+repo:LNSOTOM/forestGISML,language:Python,USES_LANGUAGE
+repo:LNSOTOM/forestGISML,domain:AI / Machine Learning,IN_DOMAIN
+repo:LNSOTOM/forestGISML,topic:geopandas,HAS_TOPIC
+repo:LNSOTOM/forestGISML,topic:lime,HAS_TOPIC
+repo:LNSOTOM/forestGISML,topic:machine-learning-algorithms,HAS_TOPIC
+repo:LNSOTOM/forestGISML,topic:numpy,HAS_TOPIC
+repo:LNSOTOM/forestGISML,cluster:AI/Data,RELATED_TO
+repo:LNSOTOM/forestGISML,cluster:GIS,RELATED_TO
+repo:jbkajtar/sst_tasmania,org:jbkajtar,OWNED_BY
+repo:jbkajtar/sst_tasmania,language:MATLAB,USES_LANGUAGE
+repo:jbkajtar/sst_tasmania,domain:Marine Science,IN_DOMAIN
+repo:jbkajtar/sst_tasmania,topic:climate,HAS_TOPIC
+repo:jbkajtar/sst_tasmania,topic:cmip6,HAS_TOPIC
+repo:jbkajtar/sst_tasmania,topic:marine-heatwaves,HAS_TOPIC
+repo:jbkajtar/sst_tasmania,topic:noaa,HAS_TOPIC
+repo:jbkajtar/sst_tasmania,cluster:UTAS,RELATED_TO
+repo:vinmasci/lutruwita_map,org:vinmasci,OWNED_BY
+repo:vinmasci/lutruwita_map,language:TypeScript,USES_LANGUAGE
+repo:vinmasci/lutruwita_map,domain:GIS / Geography,IN_DOMAIN
+repo:vinmasci/lutruwita_map,cluster:GIS,RELATED_TO
+repo:LamuelCH/spOccupancy_TAS,org:LamuelCH,OWNED_BY
+repo:LamuelCH/spOccupancy_TAS,language:Unknown,USES_LANGUAGE
+repo:LamuelCH/spOccupancy_TAS,domain:GIS / Geography,IN_DOMAIN
+repo:LamuelCH/spOccupancy_TAS,cluster:AI/Data,RELATED_TO
+repo:LamuelCH/spOccupancy_TAS,cluster:GIS,RELATED_TO
+repo:DPIPWE/LIST_Tools_Pro_At_3_Addin,org:DPIPWE,OWNED_BY
+repo:DPIPWE/LIST_Tools_Pro_At_3_Addin,language:Unknown,USES_LANGUAGE
+repo:DPIPWE/LIST_Tools_Pro_At_3_Addin,domain:GIS / Geography,IN_DOMAIN
+repo:DPIPWE/LIST_Tools_Pro_At_3_Addin,cluster:GIS,RELATED_TO
+repo:vinmasci/Lutruwita_Way,org:vinmasci,OWNED_BY
+repo:vinmasci/Lutruwita_Way,language:Unknown,USES_LANGUAGE
+repo:vinmasci/Lutruwita_Way,domain:GIS / Geography,IN_DOMAIN
+repo:vinmasci/Lutruwita_Way,cluster:GIS,RELATED_TO
+repo:pam-ai-coder/tasmania,org:pam-ai-coder,OWNED_BY
+repo:pam-ai-coder/tasmania,language:HTML,USES_LANGUAGE
+repo:pam-ai-coder/tasmania,domain:AI / Machine Learning,IN_DOMAIN
+repo:pam-ai-coder/tasmania,cluster:AI/Data,RELATED_TO
+repo:cjabradshaw/devilpopmodel,org:cjabradshaw,OWNED_BY
+repo:cjabradshaw/devilpopmodel,language:MATLAB,USES_LANGUAGE
+repo:cjabradshaw/devilpopmodel,domain:Data Analysis,IN_DOMAIN
+repo:cjabradshaw/devilpopmodel,topic:cohort-based-model,HAS_TOPIC
+repo:cjabradshaw/devilpopmodel,topic:dasyurid,HAS_TOPIC
+repo:cjabradshaw/devilpopmodel,topic:dasyuridae,HAS_TOPIC
+repo:cjabradshaw/devilpopmodel,topic:devil-facial-tumour-disease,HAS_TOPIC
+repo:cjabradshaw/devilpopmodel,cluster:AI/Data,RELATED_TO
+repo:ozjimbob/ecbtools,org:ozjimbob,OWNED_BY
+repo:ozjimbob/ecbtools,language:R,USES_LANGUAGE
+repo:ozjimbob/ecbtools,domain:Data Analysis,IN_DOMAIN
+repo:ozjimbob/ecbtools,cluster:UTAS,RELATED_TO
+repo:ozjimbob/ecbtools,cluster:AI/Data,RELATED_TO
+repo:mave1/KIT301---Mapping-Crime-Walks,org:mave1,OWNED_BY
+repo:mave1/KIT301---Mapping-Crime-Walks,language:Dart,USES_LANGUAGE
+repo:mave1/KIT301---Mapping-Crime-Walks,domain:GIS / Geography,IN_DOMAIN
+repo:mave1/KIT301---Mapping-Crime-Walks,cluster:UTAS,RELATED_TO
+repo:mave1/KIT301---Mapping-Crime-Walks,cluster:GIS,RELATED_TO
+repo:UTAS-physics/KYA211,org:UTAS-physics,OWNED_BY
+repo:UTAS-physics/KYA211,language:Jupyter Notebook,USES_LANGUAGE
+repo:UTAS-physics/KYA211,domain:Data Analysis,IN_DOMAIN
+repo:UTAS-physics/KYA211,cluster:UTAS,RELATED_TO
+repo:UTAS-physics/KYA211,cluster:AI/Data,RELATED_TO
+repo:kaseykhanhpham/eucalyptus-hybrid-resequencing,org:kaseykhanhpham,OWNED_BY
+repo:kaseykhanhpham/eucalyptus-hybrid-resequencing,language:Shell,USES_LANGUAGE
+repo:kaseykhanhpham/eucalyptus-hybrid-resequencing,domain:Data Analysis,IN_DOMAIN
+repo:kaseykhanhpham/eucalyptus-hybrid-resequencing,cluster:AI/Data,RELATED_TO
+repo:tinnamchoi/hare-clark-cpp,org:tinnamchoi,OWNED_BY
+repo:tinnamchoi/hare-clark-cpp,language:C++,USES_LANGUAGE
+repo:tinnamchoi/hare-clark-cpp,domain:Education / UTAS,IN_DOMAIN
+repo:tinnamchoi/hare-clark-cpp,topic:cpp,HAS_TOPIC
+repo:tinnamchoi/hare-clark-cpp,topic:electoral-systems,HAS_TOPIC
+repo:tinnamchoi/hare-clark-cpp,topic:hare-clark,HAS_TOPIC
+repo:tinnamchoi/hare-clark-cpp,topic:library,HAS_TOPIC
+repo:tinnamchoi/hare-clark-cpp,cluster:UTAS,RELATED_TO
+repo:tinnamchoi/hare-clark-cpp,cluster:AI/Data,RELATED_TO
+repo:MetalOctopus/Tasmanian-Geology-Map-Downloader,org:MetalOctopus,OWNED_BY
+repo:MetalOctopus/Tasmanian-Geology-Map-Downloader,language:Python,USES_LANGUAGE
+repo:MetalOctopus/Tasmanian-Geology-Map-Downloader,domain:GIS / Geography,IN_DOMAIN
+repo:MetalOctopus/Tasmanian-Geology-Map-Downloader,cluster:GIS,RELATED_TO
+repo:Jonah-Wilbur/Tasmanian-devil-facial-tumour-disease-dynamics,org:Jonah-Wilbur,OWNED_BY
+repo:Jonah-Wilbur/Tasmanian-devil-facial-tumour-disease-dynamics,language:Jupyter Notebook,USES_LANGUAGE
+repo:Jonah-Wilbur/Tasmanian-devil-facial-tumour-disease-dynamics,domain:Data Analysis,IN_DOMAIN
+repo:Jonah-Wilbur/Tasmanian-devil-facial-tumour-disease-dynamics,cluster:AI/Data,RELATED_TO
+repo:DPIPWE/LIST_Tools_Pro_Addin,org:DPIPWE,OWNED_BY
+repo:DPIPWE/LIST_Tools_Pro_Addin,language:Unknown,USES_LANGUAGE
+repo:DPIPWE/LIST_Tools_Pro_Addin,domain:GIS / Geography,IN_DOMAIN
+repo:DPIPWE/LIST_Tools_Pro_Addin,cluster:GIS,RELATED_TO
+repo:cpunj/Gov_hack,org:cpunj,OWNED_BY
+repo:cpunj/Gov_hack,language:Unknown,USES_LANGUAGE
+repo:cpunj/Gov_hack,domain:Data Analysis,IN_DOMAIN
+repo:cpunj/Gov_hack,cluster:AI/Data,RELATED_TO
+repo:hastings-lab/tasmanian-devil-sei-models-teamawesome,org:hastings-lab,OWNED_BY
+repo:hastings-lab/tasmanian-devil-sei-models-teamawesome,language:Unknown,USES_LANGUAGE
+repo:hastings-lab/tasmanian-devil-sei-models-teamawesome,domain:Data Analysis,IN_DOMAIN
+repo:hastings-lab/tasmanian-devil-sei-models-teamawesome,cluster:AI/Data,RELATED_TO
+repo:JonathanHolvey/tastopo,org:JonathanHolvey,OWNED_BY
+repo:JonathanHolvey/tastopo,language:Python,USES_LANGUAGE
+repo:JonathanHolvey/tastopo,domain:GIS / Geography,IN_DOMAIN
+repo:JonathanHolvey/tastopo,cluster:GIS,RELATED_TO
+repo:SIDNut/nwrrr-waste-feed,org:SIDNut,OWNED_BY
+repo:SIDNut/nwrrr-waste-feed,language:Python,USES_LANGUAGE
+repo:SIDNut/nwrrr-waste-feed,domain:Government / Public Data,IN_DOMAIN
+repo:dtcrompton/tasmania-deforestation-detection,org:dtcrompton,OWNED_BY
+repo:dtcrompton/tasmania-deforestation-detection,language:Python,USES_LANGUAGE
+repo:dtcrompton/tasmania-deforestation-detection,domain:AI / Machine Learning,IN_DOMAIN
+repo:dtcrompton/tasmania-deforestation-detection,cluster:AI/Data,RELATED_TO
+repo:FerdianFy13/Tasmanian-Devil,org:FerdianFy13,OWNED_BY
+repo:FerdianFy13/Tasmanian-Devil,language:SCSS,USES_LANGUAGE
+repo:FerdianFy13/Tasmanian-Devil,domain:Web / App,IN_DOMAIN
+repo:sage3648/KIT305-Mobile-Application-Development,org:sage3648,OWNED_BY
+repo:sage3648/KIT305-Mobile-Application-Development,language:Java,USES_LANGUAGE
+repo:sage3648/KIT305-Mobile-Application-Development,domain:Data Analysis,IN_DOMAIN
+repo:sage3648/KIT305-Mobile-Application-Development,cluster:UTAS,RELATED_TO
+repo:sage3648/KIT305-Mobile-Application-Development,cluster:AI/Data,RELATED_TO
+repo:NordicFlame/SimpleEcho,org:NordicFlame,OWNED_BY
+repo:NordicFlame/SimpleEcho,language:Java,USES_LANGUAGE
+repo:NordicFlame/SimpleEcho,domain:Data Analysis,IN_DOMAIN
+repo:NordicFlame/SimpleEcho,cluster:UTAS,RELATED_TO
+repo:NordicFlame/SimpleEcho,cluster:AI/Data,RELATED_TO
+repo:danielmuar/EO_GEOM7001_PROJECT,org:danielmuar,OWNED_BY
+repo:danielmuar/EO_GEOM7001_PROJECT,language:Jupyter Notebook,USES_LANGUAGE
+repo:danielmuar/EO_GEOM7001_PROJECT,domain:AI / Machine Learning,IN_DOMAIN
+repo:danielmuar/EO_GEOM7001_PROJECT,cluster:AI/Data,RELATED_TO
+repo:siskavera/tasmanian-devil,org:siskavera,OWNED_BY
+repo:siskavera/tasmanian-devil,language:Matlab,USES_LANGUAGE
+repo:siskavera/tasmanian-devil,domain:GIS / Geography,IN_DOMAIN
+repo:siskavera/tasmanian-devil,cluster:AI/Data,RELATED_TO
+repo:siskavera/tasmanian-devil,cluster:GIS,RELATED_TO
+repo:Jayden-Kearney/tasmania_species_app,org:Jayden-Kearney,OWNED_BY
+repo:Jayden-Kearney/tasmania_species_app,language:HTML,USES_LANGUAGE
+repo:Jayden-Kearney/tasmania_species_app,domain:Web / App,IN_DOMAIN
+repo:kittoyeah/regionalmate,org:kittoyeah,OWNED_BY
+repo:kittoyeah/regionalmate,language:HTML,USES_LANGUAGE
+repo:kittoyeah/regionalmate,domain:Education / UTAS,IN_DOMAIN
+repo:kittoyeah/regionalmate,cluster:UTAS,RELATED_TO
+repo:willemolding/penguin-tracks-vis,org:willemolding,OWNED_BY
+repo:willemolding/penguin-tracks-vis,language:JavaScript,USES_LANGUAGE
+repo:willemolding/penguin-tracks-vis,domain:Marine Science,IN_DOMAIN
+repo:willemolding/penguin-tracks-vis,cluster:AI/Data,RELATED_TO
+repo:Ryan-Ashton/Identifying-Tasmanian-Tigers-CNN,org:Ryan-Ashton,OWNED_BY
+repo:Ryan-Ashton/Identifying-Tasmanian-Tigers-CNN,language:Jupyter Notebook,USES_LANGUAGE
+repo:Ryan-Ashton/Identifying-Tasmanian-Tigers-CNN,domain:AI / Machine Learning,IN_DOMAIN
+repo:Ryan-Ashton/Identifying-Tasmanian-Tigers-CNN,cluster:AI/Data,RELATED_TO
+repo:RobWilsonTas/Tas_Aspect_Dryness,org:RobWilsonTas,OWNED_BY
+repo:RobWilsonTas/Tas_Aspect_Dryness,language:Python,USES_LANGUAGE
+repo:RobWilsonTas/Tas_Aspect_Dryness,domain:Data Analysis,IN_DOMAIN
+repo:RobWilsonTas/Tas_Aspect_Dryness,cluster:AI/Data,RELATED_TO
+repo:maxfire2008/metrotas-cancellations-history,org:maxfire2008,OWNED_BY
+repo:maxfire2008/metrotas-cancellations-history,language:HTML,USES_LANGUAGE
+repo:maxfire2008/metrotas-cancellations-history,domain:Government / Public Data,IN_DOMAIN
+repo:Bigben83/tasmanian_planbuild,org:Bigben83,OWNED_BY
+repo:Bigben83/tasmanian_planbuild,language:Ruby,USES_LANGUAGE
+repo:Bigben83/tasmanian_planbuild,domain:Data Analysis,IN_DOMAIN
+repo:Bigben83/tasmanian_planbuild,cluster:AI/Data,RELATED_TO
+repo:sylviapump/endemic-birds-of-tasmania,org:sylviapump,OWNED_BY
+repo:sylviapump/endemic-birds-of-tasmania,language:Unknown,USES_LANGUAGE
+repo:sylviapump/endemic-birds-of-tasmania,domain:Data Analysis,IN_DOMAIN
+repo:sylviapump/endemic-birds-of-tasmania,cluster:AI/Data,RELATED_TO
+repo:43South/tasmaniada,org:43South,OWNED_BY
+repo:43South/tasmaniada,language:Python,USES_LANGUAGE
+repo:43South/tasmaniada,domain:Data Analysis,IN_DOMAIN
+repo:43South/tasmaniada,cluster:AI/Data,RELATED_TO
+repo:DamienIrving/hydrotas,org:DamienIrving,OWNED_BY
+repo:DamienIrving/hydrotas,language:Jupyter Notebook,USES_LANGUAGE
+repo:DamienIrving/hydrotas,domain:Data Analysis,IN_DOMAIN
+repo:DamienIrving/hydrotas,cluster:AI/Data,RELATED_TO
+repo:TripMomentIntern/2026_Tasmania,org:TripMomentIntern,OWNED_BY
+repo:TripMomentIntern/2026_Tasmania,language:HTML,USES_LANGUAGE
+repo:TripMomentIntern/2026_Tasmania,domain:Web / App,IN_DOMAIN
+repo:surveyreports/utas-spc,org:surveyreports,OWNED_BY
+repo:surveyreports/utas-spc,language:HTML,USES_LANGUAGE
+repo:surveyreports/utas-spc,domain:Data Analysis,IN_DOMAIN
+repo:surveyreports/utas-spc,cluster:UTAS,RELATED_TO
+repo:surveyreports/utas-spc,cluster:AI/Data,RELATED_TO
+repo:giftfairy/Discover-George-Town,org:giftfairy,OWNED_BY
+repo:giftfairy/Discover-George-Town,language:HTML,USES_LANGUAGE
+repo:giftfairy/Discover-George-Town,domain:Web / App,IN_DOMAIN
+repo:mdsumner/tasmapr,org:mdsumner,OWNED_BY
+repo:mdsumner/tasmapr,language:R,USES_LANGUAGE
+repo:mdsumner/tasmapr,domain:GIS / Geography,IN_DOMAIN
+repo:mdsumner/tasmapr,cluster:GIS,RELATED_TO
+repo:bluewingedsoul/EWE-MarinePredators-Tasmania,org:bluewingedsoul,OWNED_BY
+repo:bluewingedsoul/EWE-MarinePredators-Tasmania,language:Unknown,USES_LANGUAGE
+repo:bluewingedsoul/EWE-MarinePredators-Tasmania,domain:Marine Science,IN_DOMAIN
+repo:ElijahCuff/Yellow-Pages-Scraper-Australia,org:ElijahCuff,OWNED_BY
+repo:ElijahCuff/Yellow-Pages-Scraper-Australia,language:PHP,USES_LANGUAGE
+repo:ElijahCuff/Yellow-Pages-Scraper-Australia,domain:GIS / Geography,IN_DOMAIN
+repo:ElijahCuff/Yellow-Pages-Scraper-Australia,cluster:AI/Data,RELATED_TO
+repo:ElijahCuff/Yellow-Pages-Scraper-Australia,cluster:GIS,RELATED_TO
+repo:43South/westtamarda,org:43South,OWNED_BY
+repo:43South/westtamarda,language:Python,USES_LANGUAGE
+repo:43South/westtamarda,domain:Data Analysis,IN_DOMAIN
+repo:43South/westtamarda,cluster:AI/Data,RELATED_TO
+repo:mahirs291/house-price-analysis,org:mahirs291,OWNED_BY
+repo:mahirs291/house-price-analysis,language:Jupyter Notebook,USES_LANGUAGE
+repo:mahirs291/house-price-analysis,domain:Data Analysis,IN_DOMAIN
+repo:mahirs291/house-price-analysis,cluster:AI/Data,RELATED_TO
+repo:kurankat/tasmapper,org:kurankat,OWNED_BY
+repo:kurankat/tasmapper,language:Go,USES_LANGUAGE
+repo:kurankat/tasmapper,domain:GIS / Geography,IN_DOMAIN
+repo:kurankat/tasmapper,cluster:GIS,RELATED_TO
+repo:utasanalytics/utas-analytics,org:utasanalytics,OWNED_BY
+repo:utasanalytics/utas-analytics,language:PHP,USES_LANGUAGE
+repo:utasanalytics/utas-analytics,domain:Data Analysis,IN_DOMAIN
+repo:utasanalytics/utas-analytics,cluster:UTAS,RELATED_TO
+repo:utasanalytics/utas-analytics,cluster:AI/Data,RELATED_TO
+repo:Jamzy01/tasmanian-bike-tours-website,org:Jamzy01,OWNED_BY
+repo:Jamzy01/tasmanian-bike-tours-website,language:TypeScript,USES_LANGUAGE
+repo:Jamzy01/tasmanian-bike-tours-website,domain:Data Analysis,IN_DOMAIN
+repo:Jamzy01/tasmanian-bike-tours-website,cluster:AI/Data,RELATED_TO
+repo:franciscoalbergoli/Sea_Urchin_Catcher,org:franciscoalbergoli,OWNED_BY
+repo:franciscoalbergoli/Sea_Urchin_Catcher,language:JavaScript,USES_LANGUAGE
+repo:franciscoalbergoli/Sea_Urchin_Catcher,domain:Marine Science,IN_DOMAIN
+repo:cooindaonthebeach/cooindaonthebeach,org:cooindaonthebeach,OWNED_BY
+repo:cooindaonthebeach/cooindaonthebeach,language:Unknown,USES_LANGUAGE
+repo:cooindaonthebeach/cooindaonthebeach,domain:Data Analysis,IN_DOMAIN
+repo:cooindaonthebeach/cooindaonthebeach,cluster:AI/Data,RELATED_TO
+repo:nf-s/multiverse-website,org:nf-s,OWNED_BY
+repo:nf-s/multiverse-website,language:TypeScript,USES_LANGUAGE
+repo:nf-s/multiverse-website,domain:Web / App,IN_DOMAIN
+repo:alexgleith/tasmap.org,org:alexgleith,OWNED_BY
+repo:alexgleith/tasmap.org,language:JavaScript,USES_LANGUAGE
+repo:alexgleith/tasmap.org,domain:GIS / Geography,IN_DOMAIN
+repo:alexgleith/tasmap.org,cluster:GIS,RELATED_TO
+repo:stuarta0/launceston-3d,org:stuarta0,OWNED_BY
+repo:stuarta0/launceston-3d,language:Unknown,USES_LANGUAGE
+repo:stuarta0/launceston-3d,domain:GIS / Geography,IN_DOMAIN
+repo:stuarta0/launceston-3d,cluster:GIS,RELATED_TO
+repo:parisba/2026-ArtsTas-SL,org:parisba,OWNED_BY
+repo:parisba/2026-ArtsTas-SL,language:Unknown,USES_LANGUAGE
+repo:parisba/2026-ArtsTas-SL,domain:Web / App,IN_DOMAIN
+repo:jrcrisford/programming-portfolio-kit107,org:jrcrisford,OWNED_BY
+repo:jrcrisford/programming-portfolio-kit107,language:C,USES_LANGUAGE
+repo:jrcrisford/programming-portfolio-kit107,domain:Student Projects,IN_DOMAIN
+repo:jrcrisford/programming-portfolio-kit107,cluster:UTAS,RELATED_TO
+repo:TheDarkPanther/TasmaniaMap,org:TheDarkPanther,OWNED_BY
+repo:TheDarkPanther/TasmaniaMap,language:Unknown,USES_LANGUAGE
+repo:TheDarkPanther/TasmaniaMap,domain:GIS / Geography,IN_DOMAIN
+repo:TheDarkPanther/TasmaniaMap,cluster:GIS,RELATED_TO
+repo:nickfountainjones/PracticalsKPZ312,org:nickfountainjones,OWNED_BY
+repo:nickfountainjones/PracticalsKPZ312,language:Unknown,USES_LANGUAGE
+repo:nickfountainjones/PracticalsKPZ312,domain:Data Analysis,IN_DOMAIN
+repo:nickfountainjones/PracticalsKPZ312,cluster:UTAS,RELATED_TO
+repo:nickfountainjones/PracticalsKPZ312,cluster:AI/Data,RELATED_TO
+repo:vanDemonian/TAS_data,org:vanDemonian,OWNED_BY
+repo:vanDemonian/TAS_data,language:Unknown,USES_LANGUAGE
+repo:vanDemonian/TAS_data,domain:Data Analysis,IN_DOMAIN
+repo:vanDemonian/TAS_data,cluster:AI/Data,RELATED_TO
+repo:taziedevil/tasmania-realestate-heatmap,org:taziedevil,OWNED_BY
+repo:taziedevil/tasmania-realestate-heatmap,language:HTML,USES_LANGUAGE
+repo:taziedevil/tasmania-realestate-heatmap,domain:GIS / Geography,IN_DOMAIN
+repo:taziedevil/tasmania-realestate-heatmap,cluster:GIS,RELATED_TO
+repo:taziedevil/tasmania-suburb-report-table,org:taziedevil,OWNED_BY
+repo:taziedevil/tasmania-suburb-report-table,language:HTML,USES_LANGUAGE
+repo:taziedevil/tasmania-suburb-report-table,domain:GIS / Geography,IN_DOMAIN
+repo:taziedevil/tasmania-suburb-report-table,cluster:GIS,RELATED_TO
+repo:paulieokay/coupes,org:paulieokay,OWNED_BY
+repo:paulieokay/coupes,language:Unknown,USES_LANGUAGE
+repo:paulieokay/coupes,domain:GIS / Geography,IN_DOMAIN
+repo:paulieokay/coupes,cluster:GIS,RELATED_TO
+repo:taziedevil/tasmanian-suburb-table-map,org:taziedevil,OWNED_BY
+repo:taziedevil/tasmanian-suburb-table-map,language:HTML,USES_LANGUAGE
+repo:taziedevil/tasmanian-suburb-table-map,domain:GIS / Geography,IN_DOMAIN
+repo:taziedevil/tasmanian-suburb-table-map,cluster:GIS,RELATED_TO
+repo:taziedevil/tasmania-real-estate-map,org:taziedevil,OWNED_BY
+repo:taziedevil/tasmania-real-estate-map,language:HTML,USES_LANGUAGE
+repo:taziedevil/tasmania-real-estate-map,domain:GIS / Geography,IN_DOMAIN
+repo:taziedevil/tasmania-real-estate-map,cluster:GIS,RELATED_TO
+repo:travistyzero/hydro-data,org:travistyzero,OWNED_BY
+repo:travistyzero/hydro-data,language:JavaScript,USES_LANGUAGE
+repo:travistyzero/hydro-data,domain:Data Analysis,IN_DOMAIN
+repo:travistyzero/hydro-data,cluster:AI/Data,RELATED_TO
+repo:mjec/metro-data,org:mjec,OWNED_BY
+repo:mjec/metro-data,language:Unknown,USES_LANGUAGE
+repo:mjec/metro-data,domain:Data Analysis,IN_DOMAIN
+repo:mjec/metro-data,cluster:AI/Data,RELATED_TO
+repo:lanceolata-au/prodromoi-api,org:lanceolata-au,OWNED_BY
+repo:lanceolata-au/prodromoi-api,language:C#,USES_LANGUAGE
+repo:lanceolata-au/prodromoi-api,domain:Local Business / Tourism,IN_DOMAIN
+repo:lanceolata-au/prodromoi-api,cluster:AI/Data,RELATED_TO
+repo:fredfery/3d-land-cover-map-Tasmania-esri,org:fredfery,OWNED_BY
+repo:fredfery/3d-land-cover-map-Tasmania-esri,language:R,USES_LANGUAGE
+repo:fredfery/3d-land-cover-map-Tasmania-esri,domain:GIS / Geography,IN_DOMAIN
+repo:fredfery/3d-land-cover-map-Tasmania-esri,cluster:GIS,RELATED_TO
+repo:fredfery/3d-land-cover-map-Tasmania-esa,org:fredfery,OWNED_BY
+repo:fredfery/3d-land-cover-map-Tasmania-esa,language:R,USES_LANGUAGE
+repo:fredfery/3d-land-cover-map-Tasmania-esa,domain:GIS / Geography,IN_DOMAIN
+repo:fredfery/3d-land-cover-map-Tasmania-esa,cluster:GIS,RELATED_TO
+repo:lukaslindenthal/flight-campaign-rf01-demo,org:lukaslindenthal,OWNED_BY
+repo:lukaslindenthal/flight-campaign-rf01-demo,language:JavaScript,USES_LANGUAGE
+repo:lukaslindenthal/flight-campaign-rf01-demo,domain:GIS / Geography,IN_DOMAIN
+repo:lukaslindenthal/flight-campaign-rf01-demo,cluster:GIS,RELATED_TO
+repo:AleronFrancois/PostCodeProgram,org:AleronFrancois,OWNED_BY
+repo:AleronFrancois/PostCodeProgram,language:Java,USES_LANGUAGE
+repo:AleronFrancois/PostCodeProgram,domain:GIS / Geography,IN_DOMAIN
+repo:AleronFrancois/PostCodeProgram,cluster:GIS,RELATED_TO
+repo:mohmmadAK/SIT305,org:mohmmadAK,OWNED_BY
+repo:mohmmadAK/SIT305,language:Java,USES_LANGUAGE
+repo:mohmmadAK/SIT305,domain:Data Analysis,IN_DOMAIN
+repo:mohmmadAK/SIT305,cluster:AI/Data,RELATED_TO
+repo:mdsumner/applemile,org:mdsumner,OWNED_BY
+repo:mdsumner/applemile,language:HTML,USES_LANGUAGE
+repo:mdsumner/applemile,domain:GIS / Geography,IN_DOMAIN
+repo:mdsumner/applemile,cluster:GIS,RELATED_TO
+repo:galckmin/PhD_DataAnalysis,org:galckmin,OWNED_BY
+repo:galckmin/PhD_DataAnalysis,language:Unknown,USES_LANGUAGE
+repo:galckmin/PhD_DataAnalysis,domain:Data Analysis,IN_DOMAIN
+repo:galckmin/PhD_DataAnalysis,cluster:UTAS,RELATED_TO
+repo:galckmin/PhD_DataAnalysis,cluster:AI/Data,RELATED_TO
+repo:cazalye/universityFC,org:cazalye,OWNED_BY
+repo:cazalye/universityFC,language:TypeScript,USES_LANGUAGE
+repo:cazalye/universityFC,domain:Education / UTAS,IN_DOMAIN
+repo:cazalye/universityFC,topic:contentful,HAS_TOPIC
+repo:cazalye/universityFC,topic:gatsby,HAS_TOPIC
+repo:cazalye/universityFC,topic:gatsby-site,HAS_TOPIC
+repo:cazalye/universityFC,topic:netlify,HAS_TOPIC
+repo:cazalye/universityFC,cluster:UTAS,RELATED_TO
+repo:cazalye/universityFC,cluster:AI/Data,RELATED_TO
+repo:NordicFlame/SuperCubicleAdventures,org:NordicFlame,OWNED_BY
+repo:NordicFlame/SuperCubicleAdventures,language:ShaderLab,USES_LANGUAGE
+repo:NordicFlame/SuperCubicleAdventures,domain:Data Analysis,IN_DOMAIN
+repo:NordicFlame/SuperCubicleAdventures,cluster:UTAS,RELATED_TO
+repo:NordicFlame/SuperCubicleAdventures,cluster:AI/Data,RELATED_TO
+repo:tfsbrigades/Tasmania-brigades,org:tfsbrigades,OWNED_BY
+repo:tfsbrigades/Tasmania-brigades,language:HTML,USES_LANGUAGE
+repo:tfsbrigades/Tasmania-brigades,domain:Web / App,IN_DOMAIN
+repo:Getbusi/lgmtas,org:Getbusi,OWNED_BY
+repo:Getbusi/lgmtas,language:HTML,USES_LANGUAGE
+repo:Getbusi/lgmtas,domain:Web / App,IN_DOMAIN
+repo:Kirirou/farmtasker-au,org:Kirirou,OWNED_BY
+repo:Kirirou/farmtasker-au,language:Rust,USES_LANGUAGE
+repo:Kirirou/farmtasker-au,domain:Web / App,IN_DOMAIN
+repo:sdesalas/pocket-convict-finder,org:sdesalas,OWNED_BY
+repo:sdesalas/pocket-convict-finder,language:Unknown,USES_LANGUAGE
+repo:sdesalas/pocket-convict-finder,domain:Data Analysis,IN_DOMAIN
+repo:sdesalas/pocket-convict-finder,cluster:AI/Data,RELATED_TO
+repo:rdmpage/pap-proc-roy-soc-tas,org:rdmpage,OWNED_BY
+repo:rdmpage/pap-proc-roy-soc-tas,language:PHP,USES_LANGUAGE
+repo:rdmpage/pap-proc-roy-soc-tas,domain:Research Projects,IN_DOMAIN
+repo:gopaladhikari/travel-with-a-cause,org:gopaladhikari,OWNED_BY
+repo:gopaladhikari/travel-with-a-cause,language:JavaScript,USES_LANGUAGE
+repo:gopaladhikari/travel-with-a-cause,domain:Web / App,IN_DOMAIN
+repo:wghuneke/UTasIMAS_PhDThesis_Template,org:wghuneke,OWNED_BY
+repo:wghuneke/UTasIMAS_PhDThesis_Template,language:TeX,USES_LANGUAGE
+repo:wghuneke/UTasIMAS_PhDThesis_Template,domain:Marine Science,IN_DOMAIN
+repo:wghuneke/UTasIMAS_PhDThesis_Template,cluster:UTAS,RELATED_TO
+repo:JorgeRodriguezGonzalez/tasmania-roofing,org:JorgeRodriguezGonzalez,OWNED_BY
+repo:JorgeRodriguezGonzalez/tasmania-roofing,language:Unknown,USES_LANGUAGE
+repo:JorgeRodriguezGonzalez/tasmania-roofing,domain:Web / App,IN_DOMAIN
+repo:SanchoDev39/ExploreFlindersIsland,org:SanchoDev39,OWNED_BY
+repo:SanchoDev39/ExploreFlindersIsland,language:JavaScript,USES_LANGUAGE
+repo:SanchoDev39/ExploreFlindersIsland,domain:Web / App,IN_DOMAIN
+repo:ahpoi/tasmania-overland-planner,org:ahpoi,OWNED_BY
+repo:ahpoi/tasmania-overland-planner,language:TypeScript,USES_LANGUAGE
+repo:ahpoi/tasmania-overland-planner,domain:Web / App,IN_DOMAIN
+repo:yilinqiao/tasmania-2025-trip,org:yilinqiao,OWNED_BY
+repo:yilinqiao/tasmania-2025-trip,language:HTML,USES_LANGUAGE
+repo:yilinqiao/tasmania-2025-trip,domain:Web / App,IN_DOMAIN
+repo:martincherries-star/Bushmill-Tours,org:martincherries-star,OWNED_BY
+repo:martincherries-star/Bushmill-Tours,language:HTML,USES_LANGUAGE
+repo:martincherries-star/Bushmill-Tours,domain:Web / App,IN_DOMAIN
+repo:motomazza-hub/tasmania-trip-diary,org:motomazza-hub,OWNED_BY
+repo:motomazza-hub/tasmania-trip-diary,language:HTML,USES_LANGUAGE
+repo:motomazza-hub/tasmania-trip-diary,domain:Web / App,IN_DOMAIN
+repo:aj-kivimaki/au2mate-showcase,org:aj-kivimaki,OWNED_BY
+repo:aj-kivimaki/au2mate-showcase,language:Unknown,USES_LANGUAGE
+repo:aj-kivimaki/au2mate-showcase,domain:Web / App,IN_DOMAIN
+repo:aj-kivimaki/au2mate-showcase,topic:aws,HAS_TOPIC
+repo:aj-kivimaki/au2mate-showcase,topic:docker,HAS_TOPIC
+repo:aj-kivimaki/au2mate-showcase,topic:express,HAS_TOPIC
+repo:aj-kivimaki/au2mate-showcase,topic:full-stack,HAS_TOPIC
+repo:FCMAP/qgis2web_2024_03_29-12_15_36_411992,org:FCMAP,OWNED_BY
+repo:FCMAP/qgis2web_2024_03_29-12_15_36_411992,language:JavaScript,USES_LANGUAGE
+repo:FCMAP/qgis2web_2024_03_29-12_15_36_411992,domain:GIS / Geography,IN_DOMAIN
+repo:FCMAP/qgis2web_2024_03_29-12_15_36_411992,cluster:GIS,RELATED_TO
+repo:ztgreene/tasmanian_devils,org:ztgreene,OWNED_BY
+repo:ztgreene/tasmanian_devils,language:R,USES_LANGUAGE
+repo:ztgreene/tasmanian_devils,domain:Data Analysis,IN_DOMAIN
+repo:ztgreene/tasmanian_devils,cluster:AI/Data,RELATED_TO
+repo:sergioiglevar/AIRBNB_TASMANIA,org:sergioiglevar,OWNED_BY
+repo:sergioiglevar/AIRBNB_TASMANIA,language:Jupyter Notebook,USES_LANGUAGE
+repo:sergioiglevar/AIRBNB_TASMANIA,domain:Data Analysis,IN_DOMAIN
+repo:sergioiglevar/AIRBNB_TASMANIA,cluster:AI/Data,RELATED_TO
+repo:Tas-Tech-Talks/tas-tech-events,org:Tas-Tech-Talks,OWNED_BY
+repo:Tas-Tech-Talks/tas-tech-events,language:HTML,USES_LANGUAGE
+repo:Tas-Tech-Talks/tas-tech-events,domain:Web / App,IN_DOMAIN
+repo:u7293638/aus-ghost-map,org:u7293638,OWNED_BY
+repo:u7293638/aus-ghost-map,language:Unknown,USES_LANGUAGE
+repo:u7293638/aus-ghost-map,domain:GIS / Geography,IN_DOMAIN
+repo:u7293638/aus-ghost-map,cluster:GIS,RELATED_TO
+repo:BrendanGasparin/gardening-2011,org:BrendanGasparin,OWNED_BY
+repo:BrendanGasparin/gardening-2011,language:HTML,USES_LANGUAGE
+repo:BrendanGasparin/gardening-2011,domain:Education / UTAS,IN_DOMAIN
+repo:BrendanGasparin/gardening-2011,cluster:UTAS,RELATED_TO
+repo:namedummy568-stack/TasmanianMarineData,org:namedummy568-stack,OWNED_BY
+repo:namedummy568-stack/TasmanianMarineData,language:Unknown,USES_LANGUAGE
+repo:namedummy568-stack/TasmanianMarineData,domain:Marine Science,IN_DOMAIN
+repo:nf-s/tas-convict-datavis-d3,org:nf-s,OWNED_BY
+repo:nf-s/tas-convict-datavis-d3,language:JavaScript,USES_LANGUAGE
+repo:nf-s/tas-convict-datavis-d3,domain:Data Analysis,IN_DOMAIN
+repo:nf-s/tas-convict-datavis-d3,cluster:AI/Data,RELATED_TO
+repo:RobTheOceanographer/tassie_sst_climatology,org:RobTheOceanographer,OWNED_BY
+repo:RobTheOceanographer/tassie_sst_climatology,language:Unknown,USES_LANGUAGE
+repo:RobTheOceanographer/tassie_sst_climatology,domain:Marine Science,IN_DOMAIN
+repo:travistyzero/hydro-web,org:travistyzero,OWNED_BY
+repo:travistyzero/hydro-web,language:JavaScript,USES_LANGUAGE
+repo:travistyzero/hydro-web,domain:Government / Public Data,IN_DOMAIN
+repo:unitingstats-spec/UnitingStats,org:unitingstats-spec,OWNED_BY
+repo:unitingstats-spec/UnitingStats,language:HTML,USES_LANGUAGE
+repo:unitingstats-spec/UnitingStats,domain:Web / App,IN_DOMAIN
+repo:GITenberg/The-History-of-Tasmania-Volume-I_24362,org:GITenberg,OWNED_BY
+repo:GITenberg/The-History-of-Tasmania-Volume-I_24362,language:HTML,USES_LANGUAGE
+repo:GITenberg/The-History-of-Tasmania-Volume-I_24362,domain:Web / App,IN_DOMAIN
+repo:GITenberg/The-History-of-Tasmania-Volume-II_22849,org:GITenberg,OWNED_BY
+repo:GITenberg/The-History-of-Tasmania-Volume-II_22849,language:HTML,USES_LANGUAGE
+repo:GITenberg/The-History-of-Tasmania-Volume-II_22849,domain:Web / App,IN_DOMAIN
+repo:jrcrisford/skybound-ascension-prototype,org:jrcrisford,OWNED_BY
+repo:jrcrisford/skybound-ascension-prototype,language:ShaderLab,USES_LANGUAGE
+repo:jrcrisford/skybound-ascension-prototype,domain:Student Projects,IN_DOMAIN
+repo:jrcrisford/skybound-ascension-prototype,cluster:UTAS,RELATED_TO
+repo:NAJMUL-DBN/KIT500,org:NAJMUL-DBN,OWNED_BY
+repo:NAJMUL-DBN/KIT500,language:Python,USES_LANGUAGE
+repo:NAJMUL-DBN/KIT500,domain:Student Projects,IN_DOMAIN
+repo:NAJMUL-DBN/KIT500,cluster:UTAS,RELATED_TO
+repo:ManinderpreetPuri/Business-Resilliance-Program-Data-Analysis,org:ManinderpreetPuri,OWNED_BY
+repo:ManinderpreetPuri/Business-Resilliance-Program-Data-Analysis,language:Unknown,USES_LANGUAGE
+repo:ManinderpreetPuri/Business-Resilliance-Program-Data-Analysis,domain:Data Analysis,IN_DOMAIN
+repo:ManinderpreetPuri/Business-Resilliance-Program-Data-Analysis,topic:dataanalytics,HAS_TOPIC
+repo:ManinderpreetPuri/Business-Resilliance-Program-Data-Analysis,topic:dax,HAS_TOPIC
+repo:ManinderpreetPuri/Business-Resilliance-Program-Data-Analysis,topic:powerbi,HAS_TOPIC
+repo:ManinderpreetPuri/Business-Resilliance-Program-Data-Analysis,topic:powerquerym,HAS_TOPIC
+repo:ManinderpreetPuri/Business-Resilliance-Program-Data-Analysis,cluster:AI/Data,RELATED_TO
+repo:SeaShadow/LaTeX-AMC-PhD-Thesis-Template,org:SeaShadow,OWNED_BY
+repo:SeaShadow/LaTeX-AMC-PhD-Thesis-Template,language:TeX,USES_LANGUAGE
+repo:SeaShadow/LaTeX-AMC-PhD-Thesis-Template,domain:Education / UTAS,IN_DOMAIN
+repo:SeaShadow/LaTeX-AMC-PhD-Thesis-Template,cluster:UTAS,RELATED_TO
+repo:ElijahCuff/Tas-GRN-Collection,org:ElijahCuff,OWNED_BY
+repo:ElijahCuff/Tas-GRN-Collection,language:PHP,USES_LANGUAGE
+repo:ElijahCuff/Tas-GRN-Collection,domain:Government / Public Data,IN_DOMAIN
+repo:justDlight/Shop_Tasmania_CSS,org:justDlight,OWNED_BY
+repo:justDlight/Shop_Tasmania_CSS,language:CSS,USES_LANGUAGE
+repo:justDlight/Shop_Tasmania_CSS,domain:Web / App,IN_DOMAIN
+repo:A-J-Morris/Blakes-Opening-UAV-Data-Applications,org:A-J-Morris,OWNED_BY
+repo:A-J-Morris/Blakes-Opening-UAV-Data-Applications,language:Python,USES_LANGUAGE
+repo:A-J-Morris/Blakes-Opening-UAV-Data-Applications,domain:Data Analysis,IN_DOMAIN
+repo:A-J-Morris/Blakes-Opening-UAV-Data-Applications,cluster:AI/Data,RELATED_TO
+repo:admiraldolphin/govhack2013,org:admiraldolphin,OWNED_BY
+repo:admiraldolphin/govhack2013,language:Python,USES_LANGUAGE
+repo:admiraldolphin/govhack2013,domain:Government / Public Data,IN_DOMAIN
+repo:alexanderhayward1995/Soundbites-tas,org:alexanderhayward1995,OWNED_BY
+repo:alexanderhayward1995/Soundbites-tas,language:HTML,USES_LANGUAGE
+repo:alexanderhayward1995/Soundbites-tas,domain:Data Analysis,IN_DOMAIN
+repo:alexanderhayward1995/Soundbites-tas,cluster:AI/Data,RELATED_TO
+repo:Veryboredcat/tasmanianwildcall,org:Veryboredcat,OWNED_BY
+repo:Veryboredcat/tasmanianwildcall,language:HTML,USES_LANGUAGE
+repo:Veryboredcat/tasmanianwildcall,domain:Web / App,IN_DOMAIN
+repo:Ecosystem-Indicators-Workflows/tasmanian-bogs-water-balance,org:Ecosystem-Indicators-Workflows,OWNED_BY
+repo:Ecosystem-Indicators-Workflows/tasmanian-bogs-water-balance,language:Jupyter Notebook,USES_LANGUAGE
+repo:Ecosystem-Indicators-Workflows/tasmanian-bogs-water-balance,domain:Data Analysis,IN_DOMAIN
+repo:Ecosystem-Indicators-Workflows/tasmanian-bogs-water-balance,cluster:AI/Data,RELATED_TO
+repo:Chanpreet-Singh/Talk2Me-Tasmania-public,org:Chanpreet-Singh,OWNED_BY
+repo:Chanpreet-Singh/Talk2Me-Tasmania-public,language:HTML,USES_LANGUAGE
+repo:Chanpreet-Singh/Talk2Me-Tasmania-public,domain:Data Analysis,IN_DOMAIN
+repo:Chanpreet-Singh/Talk2Me-Tasmania-public,cluster:AI/Data,RELATED_TO
+repo:KimJuWan1/Classifying-Tasmanian-Bird-Vocalizations-Using-machine-learning-with-Data-Augmentation,org:KimJuWan1,OWNED_BY
+repo:KimJuWan1/Classifying-Tasmanian-Bird-Vocalizations-Using-machine-learning-with-Data-Augmentation,language:Jupyter Notebook,USES_LANGUAGE
+repo:KimJuWan1/Classifying-Tasmanian-Bird-Vocalizations-Using-machine-learning-with-Data-Augmentation,domain:Data Analysis,IN_DOMAIN
+repo:KimJuWan1/Classifying-Tasmanian-Bird-Vocalizations-Using-machine-learning-with-Data-Augmentation,cluster:AI/Data,RELATED_TO
+repo:Andrew-Klekociuk/allskycam,org:Andrew-Klekociuk,OWNED_BY
+repo:Andrew-Klekociuk/allskycam,language:HTML,USES_LANGUAGE
+repo:Andrew-Klekociuk/allskycam,domain:Data Analysis,IN_DOMAIN
+repo:Andrew-Klekociuk/allskycam,cluster:AI/Data,RELATED_TO
+repo:sage3648/KIT301-ICT-Project,org:sage3648,OWNED_BY
+repo:sage3648/KIT301-ICT-Project,language:Unknown,USES_LANGUAGE
+repo:sage3648/KIT301-ICT-Project,domain:GIS / Geography,IN_DOMAIN
+repo:sage3648/KIT301-ICT-Project,cluster:UTAS,RELATED_TO
+repo:sage3648/KIT301-ICT-Project,cluster:GIS,RELATED_TO
+repo:travelens/tasmania-2018,org:travelens,OWNED_BY
+repo:travelens/tasmania-2018,language:Astro,USES_LANGUAGE
+repo:travelens/tasmania-2018,domain:Local Business / Tourism,IN_DOMAIN
+repo:disclosurelogs/au-tas-register-of-lobbyists,org:disclosurelogs,OWNED_BY
+repo:disclosurelogs/au-tas-register-of-lobbyists,language:Ruby,USES_LANGUAGE
+repo:disclosurelogs/au-tas-register-of-lobbyists,domain:GIS / Geography,IN_DOMAIN
+repo:disclosurelogs/au-tas-register-of-lobbyists,cluster:GIS,RELATED_TO
+repo:kasun1986/project-A,org:kasun1986,OWNED_BY
+repo:kasun1986/project-A,language:Unknown,USES_LANGUAGE
+repo:kasun1986/project-A,domain:Education / UTAS,IN_DOMAIN
+repo:kasun1986/project-A,cluster:UTAS,RELATED_TO
+repo:lisa-craw/tasmania_airbnbs,org:lisa-craw,OWNED_BY
+repo:lisa-craw/tasmania_airbnbs,language:Python,USES_LANGUAGE
+repo:lisa-craw/tasmania_airbnbs,domain:Data Analysis,IN_DOMAIN
+repo:lisa-craw/tasmania_airbnbs,cluster:AI/Data,RELATED_TO
+repo:travelens/tasmania-2023,org:travelens,OWNED_BY
+repo:travelens/tasmania-2023,language:Astro,USES_LANGUAGE
+repo:travelens/tasmania-2023,domain:Local Business / Tourism,IN_DOMAIN
+repo:vecotter-cpu/dovecote-estate,org:vecotter-cpu,OWNED_BY
+repo:vecotter-cpu/dovecote-estate,language:TypeScript,USES_LANGUAGE
+repo:vecotter-cpu/dovecote-estate,domain:Web / App,IN_DOMAIN
+repo:PT9301/Australian-Mountain-Peaks-KML,org:PT9301,OWNED_BY
+repo:PT9301/Australian-Mountain-Peaks-KML,language:R,USES_LANGUAGE
+repo:PT9301/Australian-Mountain-Peaks-KML,domain:GIS / Geography,IN_DOMAIN
+repo:PT9301/Australian-Mountain-Peaks-KML,cluster:GIS,RELATED_TO
+repo:chrmccar/tasmania_seasons,org:chrmccar,OWNED_BY
+repo:chrmccar/tasmania_seasons,language:Python,USES_LANGUAGE
+repo:chrmccar/tasmania_seasons,domain:Data Analysis,IN_DOMAIN
+repo:chrmccar/tasmania_seasons,cluster:AI/Data,RELATED_TO
+repo:yanter/ccat,org:yanter,OWNED_BY
+repo:yanter/ccat,language:Astro,USES_LANGUAGE
+repo:yanter/ccat,domain:Other Tasmania,IN_DOMAIN
+repo:wragge/chinese-tasmania-jlite,org:wragge,OWNED_BY
+repo:wragge/chinese-tasmania-jlite,language:Jupyter Notebook,USES_LANGUAGE
+repo:wragge/chinese-tasmania-jlite,domain:Data Analysis,IN_DOMAIN
+repo:wragge/chinese-tasmania-jlite,cluster:AI/Data,RELATED_TO
+repo:EliCarli/VarDyn_south_Tasmania_dataset,org:EliCarli,OWNED_BY
+repo:EliCarli/VarDyn_south_Tasmania_dataset,language:nesC,USES_LANGUAGE
+repo:EliCarli/VarDyn_south_Tasmania_dataset,domain:Data Analysis,IN_DOMAIN
+repo:EliCarli/VarDyn_south_Tasmania_dataset,cluster:AI/Data,RELATED_TO
+repo:exxamalte/python-georss-tfs-incidents-client,org:exxamalte,OWNED_BY
+repo:exxamalte/python-georss-tfs-incidents-client,language:Python,USES_LANGUAGE
+repo:exxamalte/python-georss-tfs-incidents-client,domain:GIS / Geography,IN_DOMAIN
+repo:exxamalte/python-georss-tfs-incidents-client,topic:georss,HAS_TOPIC
+repo:exxamalte/python-georss-tfs-incidents-client,cluster:GIS,RELATED_TO
+repo:T3A2Group/client,org:T3A2Group,OWNED_BY
+repo:T3A2Group/client,language:JavaScript,USES_LANGUAGE
+repo:T3A2Group/client,domain:Web / App,IN_DOMAIN
+repo:43South/Tasmanian-Councils,org:43South,OWNED_BY
+repo:43South/Tasmanian-Councils,language:Unknown,USES_LANGUAGE
+repo:43South/Tasmanian-Councils,domain:Government / Public Data,IN_DOMAIN

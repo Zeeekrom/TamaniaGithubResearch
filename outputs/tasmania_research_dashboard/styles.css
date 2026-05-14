@@ -68,6 +68,19 @@ h2 {
   align-items: center;
 }
 
+.version-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #eef4ff;
+  color: #1d4ed8;
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .top-actions a,
 .top-actions button,
 .repo-link,

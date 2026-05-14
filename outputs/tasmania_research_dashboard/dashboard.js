@@ -1040,7 +1040,24 @@ function populateFilters() {
   });
 }
 
+async function loadAppVersion() {
+  const badge = $("appVersion");
+  if (!badge) return;
+  try {
+    const response = await fetch("./api/version", { cache: "no-store" });
+    if (!response.ok) return;
+    const payload = await response.json();
+    if (payload.version) {
+      badge.textContent = `v${payload.version}`;
+      badge.title = `${payload.name || "dashboard"} ${payload.environment || ""}`.trim();
+    }
+  } catch {
+    // Static file preview keeps the built-in version badge.
+  }
+}
+
 async function boot() {
+  loadAppVersion();
   const res = await fetch("./data/dashboard_data.json");
   state.data = await res.json();
   loadLiveRepos();

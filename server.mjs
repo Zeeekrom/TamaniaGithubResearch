@@ -5,6 +5,8 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "outputs", "tasmania_research_dashboard");
+const packageJson = JSON.parse(await fs.readFile(path.join(__dirname, "package.json"), "utf8"));
+const appVersion = process.env.APP_VERSION || packageJson.version || "0.0.0";
 const port = Number(process.env.PORT || 8787);
 const host = process.env.HOST || "0.0.0.0";
 const apiKey = process.env.ZHIPU_API_KEY;
@@ -155,6 +157,15 @@ const server = http.createServer(async (req, res) => {
     await handleChat(req, res);
     return;
   }
+  if (req.method === "GET" && req.url === "/api/version") {
+    sendJson(res, 200, {
+      name: packageJson.name || "tasmania-research-dashboard",
+      version: appVersion,
+      model,
+      environment: process.env.RENDER ? "render" : "local",
+    });
+    return;
+  }
   if (req.method === "GET" || req.method === "HEAD") {
     await serveStatic(req, res);
     return;
@@ -165,6 +176,7 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(port, host, () => {
   console.log(`Dashboard server running on ${host}:${port}`);
+  console.log(`APP_VERSION=${appVersion}`);
   console.log(`Local URL: http://127.0.0.1:${port}/`);
   console.log(`ZHIPU_API_KEY ${apiKey ? "is set" : "is NOT set"}.`);
   console.log(`ZHIPU_MODEL=${model}`);

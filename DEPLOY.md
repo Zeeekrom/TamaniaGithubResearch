@@ -1,5 +1,7 @@
 # Deploy the Tasmania Research Dashboard
 
+Current app version: `0.2.0`
+
 ## Recommended free option: Render
 
 This project is deployment-ready for Render Free Web Service.
@@ -39,9 +41,17 @@ Render will provide a public URL after deployment.
 
 Free services may sleep when idle, so the first request after inactivity can be slow.
 
+You can check the deployed version at `/api/version`, for example:
+
+```text
+https://tamaniagithubresearch.onrender.com/api/version
+```
+
 ## Windows GUI Launcher
 
 Double-click `LaunchDashboard.bat`.
+
+The launcher reads the version from `package.json` and shows it in the window title.
 
 - `Start Local` starts the dashboard on `http://127.0.0.1:8787/`.
 - `Open Render` opens the free Render deployment without starting a local server.

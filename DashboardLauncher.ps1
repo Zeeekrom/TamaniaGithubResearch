@@ -8,6 +8,19 @@ $LocalUrl = "http://127.0.0.1:8787/"
 $RenderUrl = "https://tamaniagithubresearch.onrender.com/"
 $script:LocalProcess = $null
 
+function Get-AppVersion {
+    $packagePath = Join-Path $ProjectRoot "package.json"
+    if (Test-Path $packagePath) {
+        try {
+            $package = Get-Content -Raw $packagePath | ConvertFrom-Json
+            if ($package.version) { return [string]$package.version }
+        } catch {}
+    }
+    return "unknown"
+}
+
+$AppVersion = Get-AppVersion
+
 function Get-NodePath {
     $bundled = "C:\Users\Reeshiram\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe"
     if (Test-Path $bundled) { return $bundled }
@@ -60,13 +73,13 @@ function Set-Status {
 }
 
 $form = New-Object System.Windows.Forms.Form
-$form.Text = "Tasmania Dashboard Launcher"
+$form.Text = "Tasmania Dashboard Launcher v$AppVersion"
 $form.Size = New-Object System.Drawing.Size(760, 520)
 $form.StartPosition = "CenterScreen"
 $form.Font = New-Object System.Drawing.Font("Segoe UI", 10)
 
 $title = New-Object System.Windows.Forms.Label
-$title.Text = "Tasmania Research Dashboard"
+$title.Text = "Tasmania Research Dashboard v$AppVersion"
 $title.Font = New-Object System.Drawing.Font("Segoe UI", 18, [System.Drawing.FontStyle]::Bold)
 $title.AutoSize = $true
 $title.Location = New-Object System.Drawing.Point(24, 22)
@@ -151,7 +164,7 @@ $statusTitle.Location = New-Object System.Drawing.Point(28, 345)
 $form.Controls.Add($statusTitle)
 
 $statusLabel = New-Object System.Windows.Forms.Label
-$statusLabel.Text = "Ready. No local server started by this launcher yet."
+$statusLabel.Text = "Ready. Version v$AppVersion. No local server started by this launcher yet."
 $statusLabel.Size = New-Object System.Drawing.Size(650, 64)
 $statusLabel.Location = New-Object System.Drawing.Point(28, 373)
 $statusLabel.ForeColor = [System.Drawing.Color]::FromArgb(70, 82, 104)
@@ -187,7 +200,7 @@ $startButton.Add_Click({
         $script:LocalProcess = Start-Process -FilePath $npm -ArgumentList @("start") -WorkingDirectory $ProjectRoot -WindowStyle Hidden -PassThru
         Start-Sleep -Seconds 2
         if (Test-LocalServer) {
-            Set-Status "Local server started: $LocalUrl" "Ok"
+            Set-Status "Local server started: $LocalUrl Version v$AppVersion." "Ok"
         } else {
             Set-Status "Tried to start local server, but port 8787 is not listening yet. Check server logs." "Error"
         }
@@ -207,7 +220,7 @@ $openLocalButton.Add_Click({
 
 $openRenderButton.Add_Click({
     Start-Process $RenderUrl
-    Set-Status "Opened Render deployment. This does not start any local background process." "Ok"
+    Set-Status "Opened Render deployment. Check the web header or /api/version for the live version. This does not start any local background process." "Ok"
 })
 
 $stopButton.Add_Click({

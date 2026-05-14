@@ -43,8 +43,8 @@ function buildContext(repos = []) {
         `Stars: ${repo.stars}; Forks: ${repo.forks}`,
         `Scores: priority=${repo.priorityScore}, technical=${repo.technicalValue}, relevance=${repo.personalRelevance}`,
         `Flags: ${(repo.flags || []).join(", ")}`,
-        `Description: ${repo.description || ""}`,
-        `Evaluation: ${repo.evaluation || ""}`,
+        `Summary: ${String(repo.description || "").slice(0, 280)}`,
+        `Value: ${String(repo.evaluation || "").slice(0, 220)}`,
       ].join("\n");
     })
     .join("\n\n");
@@ -77,13 +77,17 @@ async function handleChat(req, res) {
   const answerLanguage =
     language === "zh" ? "Simplified Chinese" : language === "zh-tw" ? "Traditional Chinese" : "English";
   const context = buildContext(repos);
-  const system = `You are a RAG research assistant for a Tasmania / UTAS GitHub intelligence dashboard.
+  const system = `You are a concise RAG research assistant for a Tasmania / UTAS GitHub intelligence dashboard.
 Answer in ${answerLanguage}.
 Use only the provided repository context when making repo-specific claims.
 Prioritize AI, Data, IT, Australian employment relevance, UTAS relevance, active projects, and production-ready projects.
 When recommending repos, include repo names and URLs.
 If the context is insufficient, say what is missing and suggest a useful filter/search query.
-Keep answers concise, practical, and research-oriented.`;
+Be direct. Do not start with filler phrases such as "Based on the provided context", "Sure", "Here are", or "I found".
+Do not explain the RAG process.
+Use short bullets or a compact table.
+For each recommended repo, include: repo name, why it matches, tech/value, and URL.
+Keep the answer complete but compact.`;
 
   const user = `User question:
 ${question}
@@ -105,7 +109,7 @@ ${context || "No repository context was provided."}`;
           { role: "user", content: user },
         ],
         temperature: 0.35,
-        max_tokens: 1800,
+        max_tokens: 3200,
         stream: false,
       }),
     });

@@ -38,3 +38,12 @@ Do not put the real API key in frontend files or commit it to GitHub.
 Render will provide a public URL after deployment.
 
 Free services may sleep when idle, so the first request after inactivity can be slow.
+
+## Windows GUI Launcher
+
+Double-click `LaunchDashboard.bat`.
+
+- `Start Local` starts the dashboard on `http://127.0.0.1:8787/`.
+- `Open Render` opens the free Render deployment without starting a local server.
+- `Stop Local` shuts down the local Node server on port `8787`.
+- Closing the launcher window also stops the local server started for this dashboard.

@@ -120,6 +120,18 @@
             <span data-i18n="ragHint">Uses current filters and top matching repos as context</span>
           </div>
           <div class="assistant-panel">
+            <div class="assistant-controls">
+              <label>
+                <span data-i18n="ragTopK">Context repos</span>
+                <select id="ragTopK">
+                  <option value="5">5</option>
+                  <option value="10" selected>10</option>
+                  <option value="15">15</option>
+                  <option value="24">24</option>
+                  <option value="50">50</option>
+                </select>
+              </label>
+            </div>
             <div class="assistant-input">
               <textarea id="ragQuestion" rows="3" data-i18n-placeholder="ragPlaceholder" placeholder="Ask about Tasmania / UTAS repos, AI/Data fit, portfolio ideas, or research priorities."></textarea>
               <button id="ragAskBtn" type="button" data-i18n="askAssistant">Ask Assistant</button>

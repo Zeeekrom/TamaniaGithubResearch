@@ -53,6 +53,7 @@ const i18n = {
     queueHint: "Auto-prioritized Top 20",
     ragAssistant: "RAG Research Assistant",
     ragHint: "Uses current filters and top matching repos as context",
+    ragTopK: "Context repos",
     ragPlaceholder: "Ask about Tasmania / UTAS repos, AI/Data fit, portfolio ideas, or research priorities.",
     askAssistant: "Ask Assistant",
     ragThinking: "Thinking with {count} repo context items...",
@@ -112,6 +113,7 @@ const i18n = {
     queueHint: "自动优先级 Top 20",
     ragAssistant: "RAG 研究助手",
     ragHint: "使用当前筛选条件和最匹配的 repo 作为上下文",
+    ragTopK: "上下文 repo 数",
     ragPlaceholder: "可以询问 Tasmania / UTAS repo、AI/Data 匹配、作品集想法或研究优先级。",
     askAssistant: "询问助手",
     ragThinking: "正在结合 {count} 个 repo 上下文思考...",
@@ -171,6 +173,7 @@ const i18n = {
     queueHint: "自動優先級 Top 20",
     ragAssistant: "RAG 研究助手",
     ragHint: "使用目前篩選條件和最匹配的 repo 作為上下文",
+    ragTopK: "上下文 repo 數",
     ragPlaceholder: "可以詢問 Tasmania / UTAS repo、AI/Data 匹配、作品集想法或研究優先級。",
     askAssistant: "詢問助手",
     ragThinking: "正在結合 {count} 個 repo 上下文思考...",
@@ -766,7 +769,7 @@ function scoreQuestionMatch(repo, terms) {
   return score;
 }
 
-function selectRagRepos(question) {
+function selectRagRepos(question, limit) {
   const terms = question
     .toLowerCase()
     .split(/[^a-z0-9+#.-]+/i)
@@ -774,7 +777,7 @@ function selectRagRepos(question) {
     .slice(0, 30);
   return [...state.filtered]
     .sort((a, b) => scoreQuestionMatch(b, terms) - scoreQuestionMatch(a, terms))
-    .slice(0, 24)
+    .slice(0, limit)
     .map((repo) => ({
       full_name: repo.full_name,
       url: repo.url,
@@ -802,7 +805,8 @@ async function askRagAssistant() {
     status.classList.add("is-error");
     return;
   }
-  const repos = selectRagRepos(question);
+  const topK = Number($("ragTopK").value || 10);
+  const repos = selectRagRepos(question, topK);
   status.textContent = t("ragThinking", { count: repos.length });
   status.classList.remove("is-error");
   answer.textContent = "";

@@ -329,6 +329,23 @@ svg {
   gap: 12px;
 }
 
+.assistant-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.assistant-controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.assistant-controls select {
+  min-width: 96px;
+}
+
 .assistant-input {
   display: grid;
   grid-template-columns: 1fr auto;

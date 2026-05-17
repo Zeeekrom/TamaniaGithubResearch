@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "outputs", "tasmania_research_dashboard");
+const contributionPath = path.join(root, "data", "community_contributions.json");
 const packageJson = JSON.parse(await fs.readFile(path.join(__dirname, "package.json"), "utf8"));
 const appVersion = process.env.APP_VERSION || packageJson.version || "0.0.0";
 const port = Number(process.env.PORT || 8787);
@@ -24,6 +25,34 @@ const mime = {
 function sendJson(res, status, payload) {
   res.writeHead(status, { "Content-Type": "application/json; charset=utf-8" });
   res.end(JSON.stringify(payload));
+}
+
+function isValidContribution(item) {
+  return (
+    item &&
+    item.source === "Community contribution" &&
+    ["person", "project"].includes(item.contributionType) &&
+    typeof item.full_name === "string" &&
+    typeof item.url === "string" &&
+    item.url.startsWith("https://github.com/") &&
+    Array.isArray(item.contributionEvidence) &&
+    item.contributionEvidence.length > 0
+  );
+}
+
+async function readContributions() {
+  try {
+    const text = await fs.readFile(contributionPath, "utf8");
+    const items = JSON.parse(text);
+    return Array.isArray(items) ? items.filter(isValidContribution) : [];
+  } catch {
+    return [];
+  }
+}
+
+async function writeContributions(items) {
+  await fs.mkdir(path.dirname(contributionPath), { recursive: true });
+  await fs.writeFile(contributionPath, `${JSON.stringify(items, null, 2)}\n`, "utf8");
 }
 
 async function readBody(req) {
@@ -131,6 +160,42 @@ ${context || "No repository context was provided."}`;
   }
 }
 
+async function handleContributions(req, res) {
+  if (req.method === "GET") {
+    sendJson(res, 200, { items: await readContributions() });
+    return;
+  }
+
+  let body;
+  try {
+    body = await readBody(req);
+  } catch {
+    sendJson(res, 400, { error: "Invalid JSON body." });
+    return;
+  }
+
+  const item = body.item;
+  if (!isValidContribution(item)) {
+    sendJson(res, 400, { error: "Invalid community contribution." });
+    return;
+  }
+
+  const items = await readContributions();
+  const key = String(item.id || item.full_name).toLowerCase();
+  const existingIndex = items.findIndex((entry) => String(entry.id || entry.full_name).toLowerCase() === key);
+  if (existingIndex >= 0) {
+    items[existingIndex] = item;
+  } else {
+    items.push(item);
+  }
+  try {
+    await writeContributions(items);
+    sendJson(res, 200, { ok: true, count: items.length });
+  } catch (error) {
+    sendJson(res, 500, { error: `Could not save contribution: ${error.message}` });
+  }
+}
+
 async function serveStatic(req, res) {
   const url = new URL(req.url, `http://${req.headers.host}`);
   const pathname = decodeURIComponent(url.pathname);
@@ -155,6 +220,10 @@ async function serveStatic(req, res) {
 const server = http.createServer(async (req, res) => {
   if (req.method === "POST" && req.url === "/api/chat") {
     await handleChat(req, res);
+    return;
+  }
+  if ((req.method === "GET" || req.method === "POST") && req.url === "/api/contributions") {
+    await handleContributions(req, res);
     return;
   }
   if (req.method === "GET" && req.url === "/api/version") {

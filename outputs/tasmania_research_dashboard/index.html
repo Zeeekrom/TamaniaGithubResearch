@@ -35,26 +35,55 @@
 
       <section class="contribution-panel">
         <div class="panel-head">
-          <h2>Community Contribution</h2>
+          <h2 data-i18n="contributionTitle">Community Contribution</h2>
           <span id="contributionStatus" class="contribution-status" role="status"></span>
         </div>
         <div class="contribution-grid">
           <label>
-            <span>Type</span>
+            <span data-i18n="contributionType">Type</span>
             <select id="contributionType">
-              <option value="project">Project / single repo</option>
-              <option value="person">Person / profile only</option>
+              <option value="project" data-i18n="contributionProjectOption">Project / single repo</option>
+              <option value="person" data-i18n="contributionPersonOption">Person / profile only</option>
             </select>
           </label>
           <label>
-            <span>GitHub URL</span>
-            <input id="contributionUrl" type="url" placeholder="https://github.com/owner/repo or https://github.com/owner" />
+            <span data-i18n="contributionUrl">GitHub URL</span>
+            <input id="contributionUrl" type="url" data-i18n-placeholder="contributionUrlPlaceholder" placeholder="https://github.com/owner/repo or https://github.com/owner" />
           </label>
           <label class="contribution-evidence">
-            <span>Evidence</span>
-            <textarea id="contributionEvidence" rows="2" placeholder="UTAS, University of Tasmania, Tasmania, Hobart, course code, or other verifiable context"></textarea>
+            <span data-i18n="contributionEvidence">Evidence</span>
+            <textarea id="contributionEvidence" rows="2" data-i18n-placeholder="contributionEvidencePlaceholder" placeholder="UTAS, University of Tasmania, Tasmania, Hobart, course code, or other verifiable context"></textarea>
           </label>
-          <button id="contributionBtn" type="button">Validate & Add</button>
+          <button id="contributionBtn" type="button" data-i18n="contributionButton">Validate & Add</button>
+        </div>
+      </section>
+
+      <section class="project-guide-panel">
+        <div class="panel-head">
+          <h2 data-i18n="projectGuide">Project Guide</h2>
+          <span data-i18n="projectGuideHint">Overview, technology, usage, and deployment</span>
+        </div>
+        <div class="project-guide-grid">
+          <article class="guide-block">
+            <h3 data-i18n="projectOverviewTitle">Basic Introduction</h3>
+            <p data-i18n="projectOverviewText">A Tasmania / UTAS GitHub intelligence dashboard for finding, filtering, prioritizing, and researching public repositories related to local technology, education, research, data, and student work.</p>
+          </article>
+          <article class="guide-block">
+            <h3 data-i18n="projectTechnicalTitle">Technical Introduction</h3>
+            <p data-i18n="projectTechnicalText">The app is a Node.js static server with a browser dashboard, GitHub REST API updates, client-side scoring/classification, local and server contribution storage, CSV/Neo4j exports, and an optional Zhipu-powered RAG assistant.</p>
+          </article>
+          <article class="guide-block">
+            <h3 data-i18n="projectUsageTitle">Usage</h3>
+            <p data-i18n="projectUsageText">Use filters to narrow repositories, update the live Tasmania search from GitHub, ask the assistant with the current filtered context, or contribute one validated person/profile or one validated project/repo.</p>
+          </article>
+          <article class="guide-block">
+            <h3 data-i18n="projectLocalDeployTitle">Local Deployment</h3>
+            <p data-i18n="projectLocalDeployText">Install Node.js 20+, run npm install, set ZHIPU_API_KEY if the assistant is needed, then run npm start and open http://127.0.0.1:8787/.</p>
+          </article>
+          <article class="guide-block">
+            <h3 data-i18n="projectCloudDeployTitle">Cloud Deployment</h3>
+            <p data-i18n="projectCloudDeployText">Deploy the repository as a Render Web Service with npm install and npm start, set ZHIPU_API_KEY, ZHIPU_MODEL, and HOST=0.0.0.0, then open the generated public URL.</p>
+          </article>
         </div>
       </section>
 

@@ -210,6 +210,114 @@ const i18n = {
   },
 };
 
+Object.assign(i18n.en, {
+  contributionTitle: "Community Contribution",
+  contributionType: "Type",
+  contributionProjectOption: "Project / single repo",
+  contributionPersonOption: "Person / profile only",
+  contributionUrl: "GitHub URL",
+  contributionUrlPlaceholder: "https://github.com/owner/repo or https://github.com/owner",
+  contributionEvidence: "Evidence",
+  contributionEvidencePlaceholder: "UTAS, University of Tasmania, Tasmania, Hobart, course code, or other verifiable context",
+  contributionButton: "Validate & Add",
+  contributionChecking: "Checking...",
+  contributionAdded: "{type} added: {name}. Added {added}, updated {updated}.",
+  contributionProjectLabel: "Project",
+  contributionPersonLabel: "Profile",
+  contributionLocalOnly: " Server save failed; kept in this browser only.",
+  contributionNeedUrl: "GitHub URL is required.",
+  contributionInvalidOwner: "Use a valid GitHub owner or profile URL.",
+  contributionNeedRepo: "Project contributions must use a repo URL like https://github.com/owner/repo.",
+  contributionPersonProfileOnly: "Person contributions must use a profile URL, not a repo URL.",
+  contributionInvalidRepo: "Use a valid GitHub repo URL.",
+  contributionRejectProject: "Rejected: no UTAS/Tasmania signal found in repo metadata, README, or evidence.",
+  contributionRejectPerson: "Rejected: no UTAS/Tasmania signal found in profile or evidence.",
+  projectGuide: "Project Guide",
+  projectGuideHint: "Overview, technology, usage, and deployment",
+  projectOverviewTitle: "Basic Introduction",
+  projectOverviewText: "A Tasmania / UTAS GitHub intelligence dashboard for finding, filtering, prioritizing, and researching public repositories related to local technology, education, research, data, and student work.",
+  projectTechnicalTitle: "Technical Introduction",
+  projectTechnicalText: "The app is a Node.js static server with a browser dashboard, GitHub REST API updates, client-side scoring/classification, local and server contribution storage, CSV/Neo4j exports, and an optional Zhipu-powered RAG assistant.",
+  projectUsageTitle: "Usage",
+  projectUsageText: "Use filters to narrow repositories, update the live Tasmania search from GitHub, ask the assistant with the current filtered context, or contribute one validated person/profile or one validated project/repo.",
+  projectLocalDeployTitle: "Local Deployment",
+  projectLocalDeployText: "Install Node.js 20+, run npm install, set ZHIPU_API_KEY if the assistant is needed, then run npm start and open http://127.0.0.1:8787/.",
+  projectCloudDeployTitle: "Cloud Deployment",
+  projectCloudDeployText: "Deploy the repository as a Render Web Service with npm install and npm start, set ZHIPU_API_KEY, ZHIPU_MODEL, and HOST=0.0.0.0, then open the generated public URL.",
+});
+
+Object.assign(i18n.zh, {
+  contributionTitle: "社区贡献",
+  contributionType: "类型",
+  contributionProjectOption: "项目 / 单个仓库",
+  contributionPersonOption: "人物 / 仅个人主页",
+  contributionUrl: "GitHub 链接",
+  contributionUrlPlaceholder: "https://github.com/owner/repo 或 https://github.com/owner",
+  contributionEvidence: "证据",
+  contributionEvidencePlaceholder: "UTAS、University of Tasmania、Tasmania、Hobart、课程代码或其他可验证背景",
+  contributionButton: "校验并添加",
+  contributionChecking: "正在校验...",
+  contributionAdded: "已添加{type}：{name}。新增 {added}，更新 {updated}。",
+  contributionProjectLabel: "项目",
+  contributionPersonLabel: "个人主页",
+  contributionLocalOnly: " 服务器保存失败；已仅保存在当前浏览器。",
+  contributionNeedUrl: "请输入 GitHub 链接。",
+  contributionInvalidOwner: "请使用有效的 GitHub owner 或个人主页链接。",
+  contributionNeedRepo: "项目贡献必须使用仓库链接，例如 https://github.com/owner/repo。",
+  contributionPersonProfileOnly: "人物贡献必须使用个人主页链接，不能使用仓库链接。",
+  contributionInvalidRepo: "请使用有效的 GitHub 仓库链接。",
+  contributionRejectProject: "已拒绝：仓库元数据、README 或证据中没有 UTAS/Tasmania 信号。",
+  contributionRejectPerson: "已拒绝：个人主页或证据中没有 UTAS/Tasmania 信号。",
+  projectGuide: "项目说明",
+  projectGuideHint: "基本介绍、技术介绍、使用方法和部署",
+  projectOverviewTitle: "基本介绍",
+  projectOverviewText: "这是一个 Tasmania / UTAS GitHub 情报面板，用于发现、筛选、排序和研究与本地技术、教育、研究、数据和学生作品相关的公开仓库。",
+  projectTechnicalTitle: "技术介绍",
+  projectTechnicalText: "项目使用 Node.js 静态服务和浏览器端 Dashboard，包含 GitHub REST API 更新、前端评分与分类、本地和服务器贡献存储、CSV/Neo4j 导出，以及可选的智谱 RAG 助手。",
+  projectUsageTitle: "使用方法",
+  projectUsageText: "可以用筛选器缩小仓库范围，从 GitHub 更新 Tasmania 搜索结果，基于当前筛选结果询问助手，或贡献一个通过校验的人物主页或单个项目仓库。",
+  projectLocalDeployTitle: "本地部署",
+  projectLocalDeployText: "安装 Node.js 20+，运行 npm install；如需助手，设置 ZHIPU_API_KEY；然后运行 npm start 并打开 http://127.0.0.1:8787/。",
+  projectCloudDeployTitle: "云部署",
+  projectCloudDeployText: "在 Render 创建 Web Service，使用 npm install 和 npm start，设置 ZHIPU_API_KEY、ZHIPU_MODEL、HOST=0.0.0.0，然后打开生成的公开 URL。",
+});
+
+Object.assign(i18n["zh-tw"], {
+  contributionTitle: "社群貢獻",
+  contributionType: "類型",
+  contributionProjectOption: "專案 / 單一倉庫",
+  contributionPersonOption: "人物 / 僅個人首頁",
+  contributionUrl: "GitHub 連結",
+  contributionUrlPlaceholder: "https://github.com/owner/repo 或 https://github.com/owner",
+  contributionEvidence: "證據",
+  contributionEvidencePlaceholder: "UTAS、University of Tasmania、Tasmania、Hobart、課程代碼或其他可驗證背景",
+  contributionButton: "驗證並新增",
+  contributionChecking: "正在驗證...",
+  contributionAdded: "已新增{type}：{name}。新增 {added}，更新 {updated}。",
+  contributionProjectLabel: "專案",
+  contributionPersonLabel: "個人首頁",
+  contributionLocalOnly: " 伺服器儲存失敗；已僅儲存在目前瀏覽器。",
+  contributionNeedUrl: "請輸入 GitHub 連結。",
+  contributionInvalidOwner: "請使用有效的 GitHub owner 或個人首頁連結。",
+  contributionNeedRepo: "專案貢獻必須使用倉庫連結，例如 https://github.com/owner/repo。",
+  contributionPersonProfileOnly: "人物貢獻必須使用個人首頁連結，不能使用倉庫連結。",
+  contributionInvalidRepo: "請使用有效的 GitHub 倉庫連結。",
+  contributionRejectProject: "已拒絕：倉庫中繼資料、README 或證據中沒有 UTAS/Tasmania 訊號。",
+  contributionRejectPerson: "已拒絕：個人首頁或證據中沒有 UTAS/Tasmania 訊號。",
+  projectGuide: "專案說明",
+  projectGuideHint: "基本介紹、技術介紹、使用方式和部署",
+  projectOverviewTitle: "基本介紹",
+  projectOverviewText: "這是一個 Tasmania / UTAS GitHub 情報儀表板，用於發現、篩選、排序和研究與本地技術、教育、研究、資料和學生作品相關的公開倉庫。",
+  projectTechnicalTitle: "技術介紹",
+  projectTechnicalText: "專案使用 Node.js 靜態服務和瀏覽器端 Dashboard，包含 GitHub REST API 更新、前端評分與分類、本地和伺服器貢獻儲存、CSV/Neo4j 匯出，以及可選的智譜 RAG 助手。",
+  projectUsageTitle: "使用方式",
+  projectUsageText: "可以用篩選器縮小倉庫範圍，從 GitHub 更新 Tasmania 搜尋結果，基於目前篩選結果詢問助手，或貢獻一個通過驗證的人物首頁或單一專案倉庫。",
+  projectLocalDeployTitle: "本地部署",
+  projectLocalDeployText: "安裝 Node.js 20+，執行 npm install；如需助手，設定 ZHIPU_API_KEY；然後執行 npm start 並開啟 http://127.0.0.1:8787/。",
+  projectCloudDeployTitle: "雲端部署",
+  projectCloudDeployText: "在 Render 建立 Web Service，使用 npm install 和 npm start，設定 ZHIPU_API_KEY、ZHIPU_MODEL、HOST=0.0.0.0，然後開啟產生的公開 URL。",
+});
+
 const domainTranslations = {
   zh: {
     "AI / Machine Learning": "AI / 机器学习",
@@ -545,7 +653,7 @@ function contributionSignals(...parts) {
 
 function parseGitHubContribution(type, value) {
   const text = String(value || "").trim();
-  if (!text) throw new Error("GitHub URL is required.");
+  if (!text) throw new Error(t("contributionNeedUrl"));
   const urlMatch = text.match(/github\.com\/([^/\s?#]+)(?:\/([^/\s?#]+))?/i);
   let owner = "";
   let repo = "";
@@ -561,10 +669,10 @@ function parseGitHubContribution(type, value) {
   } else if (/^[A-Za-z0-9-]{1,39}$/.test(text)) {
     owner = text;
   }
-  if (!/^[A-Za-z0-9-]{1,39}$/.test(owner)) throw new Error("Use a valid GitHub owner or profile URL.");
-  if (type === "project" && !repo) throw new Error("Project contributions must use a repo URL like https://github.com/owner/repo.");
-  if (type === "person" && repo) throw new Error("Person contributions must use a profile URL, not a repo URL.");
-  if (repo && !/^[A-Za-z0-9_.-]+$/.test(repo)) throw new Error("Use a valid GitHub repo URL.");
+  if (!/^[A-Za-z0-9-]{1,39}$/.test(owner)) throw new Error(t("contributionInvalidOwner"));
+  if (type === "project" && !repo) throw new Error(t("contributionNeedRepo"));
+  if (type === "person" && repo) throw new Error(t("contributionPersonProfileOnly"));
+  if (repo && !/^[A-Za-z0-9_.-]+$/.test(repo)) throw new Error(t("contributionInvalidRepo"));
   return { owner, repo };
 }
 
@@ -647,17 +755,37 @@ function normalizeCommunityPerson(user, evidence) {
   };
 }
 
-function saveContributions() {
+async function saveContributions(item) {
   const contributions = state.data.repos.filter((repo) => repo.source === "Community contribution");
   localStorage.setItem(contributionStorageKey, JSON.stringify(contributions));
+  if (!item) return true;
+  try {
+    const response = await fetch("/api/contributions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ item }),
+    });
+    return response.ok;
+  } catch {
+    return false;
+  }
 }
 
-function loadContributions() {
+async function loadContributions() {
   try {
     const saved = JSON.parse(localStorage.getItem(contributionStorageKey) || "[]");
     if (Array.isArray(saved) && saved.length) mergeRepos(saved);
   } catch {
     localStorage.removeItem(contributionStorageKey);
+  }
+  try {
+    const response = await fetch("/api/contributions", { cache: "no-store" });
+    if (!response.ok) return;
+    const payload = await response.json();
+    const items = Array.isArray(payload.items) ? payload.items : [];
+    if (items.length) mergeRepos(items);
+  } catch {
+    // Static previews or offline local runs can still use browser-local contributions.
   }
 }
 
@@ -736,7 +864,7 @@ async function addContribution() {
   const url = $("contributionUrl").value;
   const manualEvidence = $("contributionEvidence").value;
   button.disabled = true;
-  setContributionStatus("Checking...");
+  setContributionStatus(t("contributionChecking"));
   try {
     const target = parseGitHubContribution(type, url);
     let item;
@@ -745,20 +873,21 @@ async function addContribution() {
       const repo = await githubJson(`https://api.github.com/repos/${encodeURIComponent(target.owner)}/${encodeURIComponent(target.repo)}`);
       const readme = await fetchReadmeText(target.owner, target.repo);
       evidence = contributionSignals(repo.full_name, repo.description, (repo.topics || []).join(" "), readme, manualEvidence);
-      if (!evidence.passed) throw new Error("Rejected: no UTAS/Tasmania signal found in repo metadata, README, or evidence.");
+      if (!evidence.passed) throw new Error(t("contributionRejectProject"));
       item = normalizeCommunityProject(repo, evidence);
     } else {
       const user = await githubJson(`https://api.github.com/users/${encodeURIComponent(target.owner)}`);
       evidence = contributionSignals(user.login, user.name, user.company, user.location, user.bio, manualEvidence);
-      if (!evidence.passed) throw new Error("Rejected: no UTAS/Tasmania signal found in profile or evidence.");
+      if (!evidence.passed) throw new Error(t("contributionRejectPerson"));
       item = normalizeCommunityPerson(user, evidence);
     }
 
     const result = mergeRepos([item]);
-    saveContributions();
+    const serverSaved = await saveContributions(item);
     populateFilterOptions();
     updateFilters();
-    setContributionStatus(`${type === "person" ? "Profile" : "Project"} added: ${item.full_name}. Added ${result.added}, updated ${result.updated}.`);
+    const typeLabel = type === "person" ? t("contributionPersonLabel") : t("contributionProjectLabel");
+    setContributionStatus(`${t("contributionAdded", { type: typeLabel, name: item.full_name, added: result.added, updated: result.updated })}${serverSaved ? "" : t("contributionLocalOnly")}`);
   } catch (error) {
     setContributionStatus(error.message, true);
   } finally {
@@ -1251,7 +1380,7 @@ async function boot() {
   const res = await fetch("./data/dashboard_data.json");
   state.data = await res.json();
   loadLiveRepos();
-  loadContributions();
+  await loadContributions();
   populateFilters();
   applyLanguage();
   window.addEventListener("resize", () => renderGraph());

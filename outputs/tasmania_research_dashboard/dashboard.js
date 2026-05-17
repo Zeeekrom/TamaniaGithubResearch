@@ -19,6 +19,7 @@ const state = {
 };
 
 const storageKey = "tasmaniaResearchDashboard.githubRepos.v1";
+const contributionStorageKey = "tasmaniaResearchDashboard.communityContributions.v1";
 
 const $ = (id) => document.getElementById(id);
 const tooltip = $("tooltip");
@@ -515,6 +516,151 @@ function normalizeGithubItem(item, indexBase = 0) {
   };
 }
 
+function contributionSignals(...parts) {
+  const text = parts.filter(Boolean).join(" ").toLowerCase();
+  const rules = [
+    { test: /university of tasmania|\butas\b|塔大|塔斯马尼亚大学/, reason: "UTAS signal", kind: "utas" },
+    { test: /tasmania|tasmanian|lutruwita|塔斯马尼亚|塔州/, reason: "Tasmania signal", kind: "tasmania" },
+    { test: /hobart|launceston|devonport|burnie|sandy bay|kingston|glenorchy|clarence|霍巴特/, reason: "Tasmanian place signal", kind: "tasmania" },
+    { test: /\bkit\d{3}\b|\bkx[a-z]\d{3}\b|\bcna\d{3}\b|\bict\d{3}\b|\bfit\d{3}\b/, reason: "UTAS-style course code signal", kind: "course" },
+    { test: /coursework|assignment|student project|学生|课程|作业/, reason: "student/course context", kind: "student" },
+    { test: /imas|australian maritime college|\bamc\b/, reason: "UTAS institute signal", kind: "utas" },
+  ];
+  const reasons = [];
+  const kinds = new Set();
+  for (const rule of rules) {
+    if (rule.test.test(text)) {
+      reasons.push(rule.reason);
+      kinds.add(rule.kind);
+    }
+  }
+  return {
+    passed: kinds.has("utas") || kinds.has("tasmania") || kinds.has("course"),
+    reasons,
+    hasUTAS: kinds.has("utas"),
+    hasStudent: kinds.has("student") || kinds.has("course"),
+    hasTasmania: kinds.has("tasmania"),
+  };
+}
+
+function parseGitHubContribution(type, value) {
+  const text = String(value || "").trim();
+  if (!text) throw new Error("GitHub URL is required.");
+  const urlMatch = text.match(/github\.com\/([^/\s?#]+)(?:\/([^/\s?#]+))?/i);
+  let owner = "";
+  let repo = "";
+  if (urlMatch) {
+    owner = urlMatch[1];
+    repo = (urlMatch[2] || "").replace(/\.git$/i, "");
+  } else if (type === "project") {
+    const pair = text.match(/^([^/\s]+)\/([^/\s]+)$/);
+    if (pair) {
+      owner = pair[1];
+      repo = pair[2].replace(/\.git$/i, "");
+    }
+  } else if (/^[A-Za-z0-9-]{1,39}$/.test(text)) {
+    owner = text;
+  }
+  if (!/^[A-Za-z0-9-]{1,39}$/.test(owner)) throw new Error("Use a valid GitHub owner or profile URL.");
+  if (type === "project" && !repo) throw new Error("Project contributions must use a repo URL like https://github.com/owner/repo.");
+  if (type === "person" && repo) throw new Error("Person contributions must use a profile URL, not a repo URL.");
+  if (repo && !/^[A-Za-z0-9_.-]+$/.test(repo)) throw new Error("Use a valid GitHub repo URL.");
+  return { owner, repo };
+}
+
+async function githubJson(url) {
+  const response = await fetch(url, { headers: { Accept: "application/vnd.github+json" } });
+  if (!response.ok) throw new Error(`GitHub API ${response.status}: ${response.statusText}`);
+  return response.json();
+}
+
+async function fetchReadmeText(owner, repo) {
+  try {
+    const payload = await githubJson(`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/readme`);
+    if (!payload.content) return "";
+    return atob(payload.content.replace(/\s/g, "")).slice(0, 14000);
+  } catch {
+    return "";
+  }
+}
+
+function contributionDescription(kind, evidence) {
+  const reasons = evidence.reasons.join(", ");
+  if (kind === "person") return `Community-contributed GitHub profile. Validation signals: ${reasons}.`;
+  return `Community-contributed GitHub project. Validation signals: ${reasons}.`;
+}
+
+function normalizeCommunityProject(item, evidence) {
+  const repo = normalizeGithubItem(item, 0);
+  return {
+    ...repo,
+    id: `community_project_${item.id || item.full_name}`,
+    source: "Community contribution",
+    contributionType: "project",
+    contributionEvidence: evidence.reasons,
+    evaluation: "Community-contributed project validated against UTAS/Tasmania signals.",
+    recommendation: "Added through contribution workflow after automatic signal check.",
+  };
+}
+
+function normalizeCommunityPerson(user, evidence) {
+  const base = {
+    id: `community_person_${user.id || user.login}`,
+    rank: 0,
+    full_name: `${user.login} (GitHub profile)`,
+    owner: user.login,
+    url: user.html_url,
+    description: contributionDescription("person", evidence),
+    language: "Profile",
+    stars: 0,
+    forks: 0,
+    archived: false,
+    created_at: user.created_at,
+    updated_at: user.updated_at,
+    pushed_at: user.updated_at,
+    topics: ["person", "community-contribution"],
+  };
+  const domain = evidence.hasUTAS || evidence.hasStudent ? "Education / UTAS" : "Other Tasmania";
+  const techStack = ["GitHub Profile"];
+  const flags = makeFlags(base, domain, techStack);
+  flags.isUTAS = flags.isUTAS || evidence.hasUTAS;
+  flags.isStudent = flags.isStudent || evidence.hasStudent;
+  flags.isActive = daysSinceDate(user.updated_at) <= 730;
+  const scores = scoreRepoForDashboard(base, domain, flags);
+  return {
+    ...base,
+    chineseDescription: base.description,
+    originalCategory: domain,
+    domain,
+    evaluation: "Community-contributed person profile validated against UTAS/Tasmania signals.",
+    recommendation: "Profile only; this does not import all repositories from the person.",
+    relevanceLevel: scores.personalRelevance >= 70 ? "é«˜" : scores.personalRelevance >= 45 ? "ä¸­" : "ä½Ž",
+    relevanceReason: "Community contribution / person profile.",
+    techStack,
+    flags,
+    scores,
+    createdYear: base.created_at ? String(new Date(base.created_at).getUTCFullYear()) : "Unknown",
+    pushedYear: base.updated_at ? String(new Date(base.updated_at).getUTCFullYear()) : "Unknown",
+    source: "Community contribution",
+    contributionType: "person",
+    contributionEvidence: evidence.reasons,
+  };
+}
+
+function saveContributions() {
+  const contributions = state.data.repos.filter((repo) => repo.source === "Community contribution");
+  localStorage.setItem(contributionStorageKey, JSON.stringify(contributions));
+}
+
+function loadContributions() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(contributionStorageKey) || "[]");
+    if (Array.isArray(saved) && saved.length) mergeRepos(saved);
+  } catch {
+    localStorage.removeItem(contributionStorageKey);
+  }
+}
+
 function rerankRepos() {
   state.data.repos.sort((a, b) => b.scores.priorityScore - a.scores.priorityScore);
   state.data.repos.forEach((repo, index) => {
@@ -577,12 +723,55 @@ function setUpdateStatus(message, isError = false) {
   el.classList.toggle("is-error", isError);
 }
 
+function setContributionStatus(message, isError = false) {
+  const el = $("contributionStatus");
+  if (!el) return;
+  el.textContent = message;
+  el.classList.toggle("is-error", isError);
+}
+
+async function addContribution() {
+  const button = $("contributionBtn");
+  const type = $("contributionType").value;
+  const url = $("contributionUrl").value;
+  const manualEvidence = $("contributionEvidence").value;
+  button.disabled = true;
+  setContributionStatus("Checking...");
+  try {
+    const target = parseGitHubContribution(type, url);
+    let item;
+    let evidence;
+    if (type === "project") {
+      const repo = await githubJson(`https://api.github.com/repos/${encodeURIComponent(target.owner)}/${encodeURIComponent(target.repo)}`);
+      const readme = await fetchReadmeText(target.owner, target.repo);
+      evidence = contributionSignals(repo.full_name, repo.description, (repo.topics || []).join(" "), readme, manualEvidence);
+      if (!evidence.passed) throw new Error("Rejected: no UTAS/Tasmania signal found in repo metadata, README, or evidence.");
+      item = normalizeCommunityProject(repo, evidence);
+    } else {
+      const user = await githubJson(`https://api.github.com/users/${encodeURIComponent(target.owner)}`);
+      evidence = contributionSignals(user.login, user.name, user.company, user.location, user.bio, manualEvidence);
+      if (!evidence.passed) throw new Error("Rejected: no UTAS/Tasmania signal found in profile or evidence.");
+      item = normalizeCommunityPerson(user, evidence);
+    }
+
+    const result = mergeRepos([item]);
+    saveContributions();
+    populateFilterOptions();
+    updateFilters();
+    setContributionStatus(`${type === "person" ? "Profile" : "Project"} added: ${item.full_name}. Added ${result.added}, updated ${result.updated}.`);
+  } catch (error) {
+    setContributionStatus(error.message, true);
+  } finally {
+    button.disabled = false;
+  }
+}
+
 function passesFilters(repo) {
   const query = $("searchInput").value.trim().toLowerCase();
   const domain = $("domainFilter").value;
   const language = $("languageFilter").value;
   const minPriority = Number($("priorityFilter").value);
-  const text = `${repo.full_name} ${repo.owner} ${repo.description} ${repo.chineseDescription} ${repo.domain} ${repo.language} ${repo.topics.join(" ")} ${repo.techStack.join(" ")}`.toLowerCase();
+  const text = `${repo.full_name} ${repo.owner} ${repo.description} ${repo.chineseDescription} ${repo.domain} ${repo.language} ${repo.source || ""} ${repo.contributionType || ""} ${(repo.contributionEvidence || []).join(" ")} ${repo.topics.join(" ")} ${repo.techStack.join(" ")}`.toLowerCase();
   if (query && !text.includes(query)) return false;
   if (domain !== "All" && repo.domain !== domain) return false;
   if (language !== "All" && repo.language !== language) return false;
@@ -745,7 +934,7 @@ function renderTable() {
   $("repoTable").innerHTML = rows
     .map((repo) => `<tr>
       <td>#${repo.deepResearchRank}</td>
-      <td><a class="repo-link" href="${repo.url}" target="_blank" rel="noreferrer">${escapeHtml(repo.full_name)}</a><div class="repo-meta">${escapeHtml(repo.owner)} · ${escapeHtml(repo.language)} · stars ${repo.stars}</div></td>
+      <td><a class="repo-link" href="${repo.url}" target="_blank" rel="noreferrer">${escapeHtml(repo.full_name)}</a><div class="repo-meta">${escapeHtml([repo.owner, repo.language, `stars ${repo.stars}`, repo.contributionType ? `community ${repo.contributionType}` : ""].filter(Boolean).join(" · "))}</div></td>
       <td>${escapeHtml(domainLabel(repo.domain))}</td>
       <td><span class="score-pill">P ${repo.scores.priorityScore}</span><span class="score-pill">T ${repo.scores.technicalValue}</span><span class="score-pill">R ${repo.scores.personalRelevance}</span></td>
       <td>${flagList(repo)}</td>
@@ -1029,6 +1218,7 @@ function populateFilters() {
   ids.forEach((id) => $(id).addEventListener("input", updateFilters));
   ids.forEach((id) => $(id).addEventListener("change", updateFilters));
   $("githubUpdateBtn").addEventListener("click", updateFromGithub);
+  $("contributionBtn").addEventListener("click", addContribution);
   $("ragAskBtn").addEventListener("click", askRagAssistant);
   $("ragQuestion").addEventListener("keydown", (event) => {
     if ((event.ctrlKey || event.metaKey) && event.key === "Enter") askRagAssistant();
@@ -1061,6 +1251,7 @@ async function boot() {
   const res = await fetch("./data/dashboard_data.json");
   state.data = await res.json();
   loadLiveRepos();
+  loadContributions();
   populateFilters();
   applyLanguage();
   window.addEventListener("resize", () => renderGraph());

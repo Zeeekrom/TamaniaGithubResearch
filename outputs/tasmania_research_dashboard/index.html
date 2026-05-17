@@ -32,6 +32,32 @@
 
     <main>
       <div id="githubUpdateStatus" class="update-status" role="status"></div>
+
+      <section class="contribution-panel">
+        <div class="panel-head">
+          <h2>Community Contribution</h2>
+          <span id="contributionStatus" class="contribution-status" role="status"></span>
+        </div>
+        <div class="contribution-grid">
+          <label>
+            <span>Type</span>
+            <select id="contributionType">
+              <option value="project">Project / single repo</option>
+              <option value="person">Person / profile only</option>
+            </select>
+          </label>
+          <label>
+            <span>GitHub URL</span>
+            <input id="contributionUrl" type="url" placeholder="https://github.com/owner/repo or https://github.com/owner" />
+          </label>
+          <label class="contribution-evidence">
+            <span>Evidence</span>
+            <textarea id="contributionEvidence" rows="2" placeholder="UTAS, University of Tasmania, Tasmania, Hobart, course code, or other verifiable context"></textarea>
+          </label>
+          <button id="contributionBtn" type="button">Validate & Add</button>
+        </div>
+      </section>
+
       <section class="kpi-grid" id="kpis"></section>
 
       <section class="filter-panel">

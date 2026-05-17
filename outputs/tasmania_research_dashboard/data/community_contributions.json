@@ -1,0 +1,57 @@
+[
+  {
+    "id": "community_person_48975762",
+    "rank": 0,
+    "full_name": "zubair-ahmed-official (GitHub profile)",
+    "owner": "zubair-ahmed-official",
+    "url": "https://github.com/zubair-ahmed-official",
+    "description": "Community-contributed GitHub profile. Validation signals: UTAS signal, Tasmania signal, Tasmanian place signal.",
+    "language": "Profile",
+    "stars": 0,
+    "forks": 0,
+    "archived": false,
+    "created_at": "2019-03-27T04:09:07Z",
+    "updated_at": "2026-03-10T05:14:23Z",
+    "pushed_at": "2026-03-10T05:14:23Z",
+    "topics": [
+      "person",
+      "community-contribution"
+    ],
+    "chineseDescription": "Community-contributed GitHub profile. Validation signals: UTAS signal, Tasmania signal, Tasmanian place signal.",
+    "originalCategory": "Education / UTAS",
+    "domain": "Education / UTAS",
+    "evaluation": "Community-contributed person profile validated against UTAS/Tasmania signals.",
+    "recommendation": "Profile only; this does not import all repositories from the person.",
+    "relevanceLevel": "ä¸­",
+    "relevanceReason": "Community contribution / person profile.",
+    "techStack": [
+      "GitHub Profile"
+    ],
+    "flags": {
+      "isUTAS": true,
+      "isAI": false,
+      "isData": false,
+      "isGIS": false,
+      "isActive": true,
+      "isArchived": false,
+      "isStudent": false,
+      "isProductionReady": false
+    },
+    "scores": {
+      "technicalValue": 36,
+      "personalRelevance": 46,
+      "priorityScore": 40,
+      "updatedDays": 68
+    },
+    "createdYear": "2019",
+    "pushedYear": "2026",
+    "source": "Community contribution",
+    "contributionType": "person",
+    "contributionEvidence": [
+      "UTAS signal",
+      "Tasmania signal",
+      "Tasmanian place signal"
+    ],
+    "deepResearchRank": 140
+  }
+]

@@ -7,6 +7,8 @@ $ProjectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $LocalUrl = "http://127.0.0.1:8787/"
 $RenderUrl = "https://tamaniagithubresearch.onrender.com/"
 $script:LocalProcess = $null
+$ConfigDir = Join-Path $env:APPDATA "TasmaniaResearchDashboard"
+$ConfigPath = Join-Path $ConfigDir "launcher.json"
 
 function Get-AppVersion {
     $packagePath = Join-Path $ProjectRoot "package.json"
@@ -20,6 +22,60 @@ function Get-AppVersion {
 }
 
 $AppVersion = Get-AppVersion
+
+function Get-LauncherConfig {
+    if (-not (Test-Path $ConfigPath)) { return $null }
+    try {
+        return Get-Content -Raw $ConfigPath | ConvertFrom-Json
+    } catch {
+        return $null
+    }
+}
+
+function Get-SavedApiKey {
+    $config = Get-LauncherConfig
+    if (-not $config -or -not $config.EncryptedApiKey) { return "" }
+    try {
+        $secure = ConvertTo-SecureString ([string]$config.EncryptedApiKey)
+        $bstr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure)
+        try {
+            return [Runtime.InteropServices.Marshal]::PtrToStringBSTR($bstr)
+        } finally {
+            if ($bstr -ne [IntPtr]::Zero) {
+                [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($bstr)
+            }
+        }
+    } catch {
+        return ""
+    }
+}
+
+function Get-SavedModel {
+    $config = Get-LauncherConfig
+    if ($config -and $config.Model) { return [string]$config.Model }
+    return ""
+}
+
+function Save-LauncherConfig {
+    param([string]$ApiKey, [string]$Model)
+    New-Item -ItemType Directory -Path $ConfigDir -Force | Out-Null
+    $secure = ConvertTo-SecureString $ApiKey -AsPlainText -Force
+    $payload = [ordered]@{
+        EncryptedApiKey = ConvertFrom-SecureString $secure
+        Model = $Model
+        UpdatedAt = (Get-Date).ToString("o")
+    }
+    $payload | ConvertTo-Json | Set-Content -Path $ConfigPath -Encoding UTF8
+}
+
+function Clear-LauncherConfig {
+    if (Test-Path $ConfigPath) {
+        Remove-Item -LiteralPath $ConfigPath -Force -ErrorAction SilentlyContinue
+    }
+}
+
+$SavedApiKey = Get-SavedApiKey
+$SavedModel = Get-SavedModel
 
 function Get-NodePath {
     $bundled = "C:\Users\Reeshiram\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe"
@@ -102,7 +158,7 @@ $apiBox = New-Object System.Windows.Forms.TextBox
 $apiBox.Location = New-Object System.Drawing.Point(28, 130)
 $apiBox.Size = New-Object System.Drawing.Size(520, 30)
 $apiBox.UseSystemPasswordChar = $true
-$apiBox.Text = $env:ZHIPU_API_KEY
+$apiBox.Text = if ($env:ZHIPU_API_KEY) { $env:ZHIPU_API_KEY } else { $SavedApiKey }
 $form.Controls.Add($apiBox)
 
 $showKey = New-Object System.Windows.Forms.CheckBox
@@ -114,6 +170,13 @@ $showKey.Add_CheckedChanged({
 })
 $form.Controls.Add($showKey)
 
+$rememberKey = New-Object System.Windows.Forms.CheckBox
+$rememberKey.Text = "Remember it"
+$rememberKey.AutoSize = $true
+$rememberKey.Checked = [bool]$SavedApiKey
+$rememberKey.Location = New-Object System.Drawing.Point(635, 132)
+$form.Controls.Add($rememberKey)
+
 $modelLabel = New-Object System.Windows.Forms.Label
 $modelLabel.Text = "Model"
 $modelLabel.AutoSize = $true
@@ -123,7 +186,7 @@ $form.Controls.Add($modelLabel)
 $modelBox = New-Object System.Windows.Forms.TextBox
 $modelBox.Location = New-Object System.Drawing.Point(82, 170)
 $modelBox.Size = New-Object System.Drawing.Size(160, 30)
-$modelBox.Text = "glm-4.7"
+$modelBox.Text = if ($env:ZHIPU_MODEL) { $env:ZHIPU_MODEL } elseif ($SavedModel) { $SavedModel } else { "glm-4.7" }
 $form.Controls.Add($modelBox)
 
 $startButton = New-Object System.Windows.Forms.Button
@@ -164,7 +227,7 @@ $statusTitle.Location = New-Object System.Drawing.Point(28, 345)
 $form.Controls.Add($statusTitle)
 
 $statusLabel = New-Object System.Windows.Forms.Label
-$statusLabel.Text = "Ready. Version v$AppVersion. No local server started by this launcher yet."
+$statusLabel.Text = if ($SavedApiKey) { "Ready. Version v$AppVersion. Saved API key loaded for this Windows user." } else { "Ready. Version v$AppVersion. No local server started by this launcher yet." }
 $statusLabel.Size = New-Object System.Drawing.Size(650, 64)
 $statusLabel.Location = New-Object System.Drawing.Point(28, 373)
 $statusLabel.ForeColor = [System.Drawing.Color]::FromArgb(70, 82, 104)
@@ -188,19 +251,33 @@ $startButton.Add_Click({
             Set-Status "Enter Zhipu API Key before starting local mode." "Error"
             return
         }
+        $modelName = $modelBox.Text.Trim()
+        if (-not $modelName) { $modelName = "glm-4.7" }
+        $rememberNote = ""
+        if ($rememberKey.Checked) {
+            try {
+                Save-LauncherConfig -ApiKey $apiKey -Model $modelName
+                $rememberNote = " API key remembered for this Windows user."
+            } catch {
+                $rememberNote = " Could not remember API key: $($_.Exception.Message)"
+            }
+        } else {
+            Clear-LauncherConfig
+            $rememberNote = " Saved API key cleared."
+        }
         $npm = Get-NpmCommand
         if (-not $npm) {
             Set-Status "npm.cmd was not found. Install Node.js or start with node server.mjs manually." "Error"
             return
         }
         $env:ZHIPU_API_KEY = $apiKey
-        $env:ZHIPU_MODEL = $modelBox.Text.Trim()
+        $env:ZHIPU_MODEL = $modelName
         $env:PORT = "8787"
         $env:HOST = "127.0.0.1"
         $script:LocalProcess = Start-Process -FilePath $npm -ArgumentList @("start") -WorkingDirectory $ProjectRoot -WindowStyle Hidden -PassThru
         Start-Sleep -Seconds 2
         if (Test-LocalServer) {
-            Set-Status "Local server started: $LocalUrl Version v$AppVersion." "Ok"
+            Set-Status "Local server started: $LocalUrl Version v$AppVersion.$rememberNote" "Ok"
         } else {
             Set-Status "Tried to start local server, but port 8787 is not listening yet. Check server logs." "Error"
         }

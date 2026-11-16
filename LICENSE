@@ -1,0 +1,19 @@
+Copyright (c) 2026 Tasmania Tech / Research Intelligence Dashboard. All rights reserved.
+
+No licence is granted to copy, modify, republish or distribute the contents of this
+repository, in whole or in part, without the written permission of the copyright holder.
+This does not limit what copyright law already allows, such as fair dealing for research,
+study, criticism, review or news reporting. Sharing links is welcome.
+
+Third-party material keeps its own licence:
+
+- The repository lists and data files (github_tasmania_repositories*.csv and .md, the
+  files in outputs/, and community_contributions.json) describe public GitHub repositories
+  and profiles. Those repositories, and their names, descriptions and topics as published
+  on GitHub, belong to their authors, and each keeps its own licence. This repository
+  claims no rights in them.
+- No third-party code or library is bundled in this repository. The project has no npm
+  dependencies, and the tools named in the scripts (Playwright, Google Chrome and a
+  spreadsheet library) are not included here; each is under its own licence.
+- The GitHub REST API and the Zhipu GLM API are external services used under their
+  providers' terms. No code from them is included.

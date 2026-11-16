@@ -232,7 +232,5 @@ The assistant is optional. It needs `ZHIPU_API_KEY`, and optionally `ZHIPU_MODEL
 
 ## Copyright and terms
 
-© 2026 Tasmania Tech / Research Intelligence Dashboard. All rights reserved; see [LICENSE](LICENSE). The text, poster,
-screenshots and documents in this repository, and the project's own code and design, may not be republished, copied or
-adapted without written permission. Sharing links is welcome. The repositories listed in the data files belong to their
+© 2026 Tasmania Tech / Research Intelligence Dashboard. All rights reserved; see [LICENSE](LICENSE). Without written permission, nothing in this repository may be copied, republished or adapted, and the project's code and design may not be rebuilt, whether by hand, with automated tools or with AI cloning tools. The code may not be reverse engineered except where the law allows, and the content may not be scraped, bulk-downloaded or used to train or evaluate AI models. Uses the law already allows, such as fair dealing for review or news reporting, are not affected. Sharing links is welcome. The repositories listed in the data files belong to their
 owners, and each keeps its own licence; this repository holds only their public metadata and links.

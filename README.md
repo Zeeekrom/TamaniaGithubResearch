@@ -22,10 +22,6 @@ This repository holds the source: the Node.js server, the dashboard page, the bu
 </tr>
 </table>
 
-**Live dashboard:** [tamaniagithubresearch.onrender.com](https://tamaniagithubresearch.onrender.com/)
-— the same server and data as this repository, version 0.2.0. It runs on Render's free plan and sleeps when idle,
-so the first visit can take up to a minute to wake.
-
 ## Contents
 
 - [At a glance](#at-a-glance)

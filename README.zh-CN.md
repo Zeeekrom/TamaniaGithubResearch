@@ -22,10 +22,6 @@ AI 是可选的，放在最后一步。一个基于智谱 GLM API 的小型检�
 </tr>
 </table>
 
-**线上看板：** [tamaniagithubresearch.onrender.com](https://tamaniagithubresearch.onrender.com/)
-——和这个仓库是同一套服务器和数据，版本 0.2.0。它跑在 Render 的免费方案上，闲置时会休眠，所以第一次打开
-可能要等一分钟左右才醒。
-
 ## 目录
 
 - [一眼看懂](#一眼看懂)
